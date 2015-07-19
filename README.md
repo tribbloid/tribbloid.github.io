@@ -55,8 +55,14 @@ It's Markdown and contains Yaml front-matter like `title`, `layout`, etc. (varia
 - title: title of the page (shows up in the window title)
 - layout: layout of the page
 - meta_description: meta tag description, used by search engines
+- meta_keywords: meta tag keywords, used by search engines
 
 Other pages may utilize other front-matter on a per-layout basis.
+
+
+### Data
+
+The site utilizes Yaml front-matter to provide data to the templates. Read how Jekyll works with Yaml data (and other formats) [here](http://jekyllrb.com/docs/datafiles/).
 
 
 ### Layouts

@@ -11,15 +11,19 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo-section">
-            <a href="/">Logo goes here</a>
-        </div>
+        <div class="container">
+            <div class="logo-section">
+                <a href="/">
+                    <img class="logo-image" src="/" alt="Spooky Stuff logo">
+                </a>
+            </div>
 
-        <div class="nav-primary">
-            {% for link in site.data.navigation_primary_links %}
-            <a href="{{ link.url }}" {% if link.actual_url == page.url %}class="active"{% endif %}>
-                {{ link.name }}
-            </a>
-            {% endfor %}
+            <div class="nav-primary">
+                {% for link in site.data.navigation_primary_links %}
+                <a href="{{ link.url }}" {% if link.actual_url == page.url %}class="active"{% endif %}>
+                    {{ link.name }}
+                </a>
+                {% endfor %}
+            </div>
         </div>
     </div>

@@ -1,14 +1,46 @@
 /* Header */
-@import 'variables';
-
 .header {}
 
+.logo-section {
+    padding: $padding_horizontal;
+    @include box-sizing(border-box);
+    margin-bottom: $padding_horizontal;
+
+    .logo-image {
+        background: #f39;
+        max-width: 100%;
+    }
+}
+
 .nav-primary {
+
     a {
+        color: $purple;
         font-family: $font_ss;
+        display: block;
+        padding: 5px $padding_horizontal;
+        border-bottom: 1px solid $light_grey;
 
         &.active {
             font-weight: 700;
+        }
+    }
+
+}
+
+@media #{$desktop} {
+    .logo-section {
+        @include span(3);
+    }
+
+    .nav-primary {
+        @include span(9);
+        @include omega;
+        text-align: right;
+
+        a {
+            display: inline-block;
+            border: 0;
         }
     }
 }

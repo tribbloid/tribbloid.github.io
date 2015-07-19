@@ -1,5 +1,4 @@
 /** Using SASS for CSS preprocessing http://sass-lang.com/ */
-@import url(http://fonts.googleapis.com/css?family=Domine|Montserrat);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -19,30 +18,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 html { font-size: 1.125em; }
 
-body { line-height: 1.45; color: #333; }
+body { line-height: 1.45; }
 
 p { margin-bottom: 1.3em; }
 
-h1, h2, h3, h4 { margin: 1.414em 0 0.5em; line-height: 1.2; }
-
-h1 { margin-top: 0; font-size: 2.074em; }
-
-h2 { font-size: 1.728em; }
-
-h3 { font-size: 1.44em; }
-
-h4 { font-size: 1.2em; }
-
-small, .font_small { font-size: 0.833em; }
+.font_small { font-size: 0.833em; line-height: 1.2; }
 
 /* Global styles */
-body { font-family: "Domine", "Georgia", serif; -webkit-font-smoothing: antialiased; }
-
-h1, h2, h3, h4, h5 { font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; font-weight: 400; }
+body { font-family: "Domine", "Georgia", serif; color: #444; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; }
 
 a { color: #027FE9; text-decoration: none; }
 a:hover { color: #00CAF8; }
 
+.container { max-width: 100%; margin-left: auto; margin-right: auto; *zoom: 1; max-width: 960px; }
+.container:after { content: " "; display: block; clear: both; }
+head { display: block; position: fixed; right: 10px; top: 10px; z-index: 999; color: #333; background: rgba(255, 255, 255, 0.25); }
+head:before { content: "|||"; display: block; padding: 5px 10px; font-family: sans-serif; font-size: 16px; font-weight: bold; }
+head:hover { background: rgba(255, 255, 255, 0.5); color: red; }
+head:hover ~ .container, head:hover ~ body .container { position: relative; }
+head:hover ~ .container:before, head:hover ~ body .container:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(255, 51, 153, 0.2), rgba(255, 128, 191, 0.2) 80%, transparent 80%); background-size: 8.47458%; background-origin: content-box; background-clip: content-box; background-position: left top; }
+.container:after { content: ""; display: table; clear: both; }
+
 /* Header */
-.nav-primary a { font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; }
+.logo-section { padding: 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px; }
+.logo-section .logo-image { background: #f39; max-width: 100%; }
+
+.nav-primary a { color: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; display: block; padding: 5px 10px; border-bottom: 1px solid #f8f8f8; }
 .nav-primary a.active { font-weight: 700; }
+
+@media (min-width: 700px) { .logo-section { width: 23.72881%; float: left; margin-right: 1.69492%; }
+  .nav-primary { width: 74.57627%; float: left; margin-right: 1.69492%; float: right; margin-right: 0; text-align: right; }
+  .nav-primary a { display: inline-block; border: 0; } }
+/* Product banner */
+.product-banner { background: url(/images/pattern03.png) #5015BD; color: white; padding: 20px 10px; }
+.product-banner .product-banner-title { font-size: 1.2em; line-height: 1.2; margin: 1.414em 0 0.5em; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; margin-top: 0; }
+.product-banner p:last-child { margin-bottom: 0; }
+
+@media (min-width: 700px) { .product-banner { text-align: center; padding: 50px 0; }
+  .product-banner .product-banner-title { font-size: 1.44em; line-height: 1.2; } }
+/* Databricks component */
+.databricks { padding: 20px 10px; }
+.databricks .databricks-logo .databricks-logo-image { max-width: 100%; display: block; margin: 10px auto; }
+.databricks .databricks-text { text-align: center; }
+.databricks .databricks-text p { margin: 0; }
+
+@media (min-width: 700px) { .databricks .databricks-logo { width: 32.20339%; float: left; margin-right: 1.69492%; }
+  .databricks .databricks-text { width: 57.62712%; float: left; margin-right: 1.69492%; margin-left: 8.47458%; float: right; margin-right: 0; text-align: left; padding: 1.5em 0; } }
+/* Getting Started section */
+.getting-started { background: url(/images/pattern01.png) #f8f8f8; padding: 20px 10px; }
+.getting-started .getting-started-text { text-align: center; }
+.getting-started .getting-started-text p { margin: 0; }
+.getting-started .getting-started-title { font-size: 1.44em; line-height: 1.2; margin: 1.414em 0 0.5em; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; margin-top: 0; }
+.getting-started .getting-started-links { margin-top: 40px; }
+.getting-started .getting-started-links a { font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; text-align: center; display: block; padding: 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: #5015BD; color: white; margin-bottom: 10px; }
+
+@media (min-width: 700px) { .getting-started { padding: 50px 10px; }
+  .getting-started .getting-started-title { font-size: 1.728em; line-height: 1.2; }
+  .getting-started .getting-started-links a { width: 32.20339%; float: left; margin-right: 1.69492%; }
+  .getting-started .getting-started-links a:last-child { float: right; margin-right: 0; } }

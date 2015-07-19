@@ -1,8 +1,12 @@
 {% include header.html %}
 
-<h2>{{ page.summary }}</h2>
+<div class="product-banner">
+    <div class="container">
+        <h2 class="product-banner-title">{{ page.summary }}</h2>
 
-{{ content }}
+        {{ content }}
+    </div>
+</div>
 
 {% include databricks.html %}
 

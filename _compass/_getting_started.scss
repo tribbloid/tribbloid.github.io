@@ -1,0 +1,58 @@
+/* Getting Started section */
+
+.getting-started {
+    background: url(/images/pattern01.png) $light_grey;
+    // background: url(/images/pattern05.png) $light_grey;
+    // background: url(/images/pattern08.png) $light_grey;
+    padding: $padding_vertical_mobile $padding_horizontal;
+
+    .getting-started-text {
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .getting-started-title {
+        @include title-3;
+        @include heading-margins;
+        font-family: $font_ss;
+        margin-top: 0;
+    }
+
+    .getting-started-links {
+        margin-top: $padding_vertical_mobile * 2;
+
+        a {
+            font-family: $font_ss;
+            text-align: center;
+            display: block;
+            padding: $padding_horizontal;
+            @include box-sizing(border-box);
+            background: $purple;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .getting-started {
+        padding: $padding_vertical_desktop $padding_horizontal;
+
+        .getting-started-title {
+            @include title-2;
+        }
+
+        .getting-started-links {
+            a {
+                @include span(4);
+
+                &:last-child {
+                    @include omega;
+                }
+            }
+        }
+    }
+}

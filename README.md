@@ -14,7 +14,7 @@ Run the following command to install the Gem dependencies:
 
 CSS is compiled and preprocessed with Compass. All working files are found in `_compass` and compile to `_site/css`.
 
-Prepend include the filenames of include files with `_` to avoid writing those files to the output directory.
+Prepend the filenames of include files (Sass partials) with `_` to avoid writing those files to the output directory.
 
     ├── _compass
     │   ├── _header.scss
@@ -86,14 +86,14 @@ Other pages may utilize other front-matter on a per-layout basis.
 
 ### Data
 
-The site utilizes Yaml front-matter to provide data to the templates. Read how Jekyll works with Yaml data (and other formats) [here](http://jekyllrb.com/docs/datafiles/).
+The site utilizes Yaml files to provide data to the templates. Read how Jekyll works with Yaml data (and other formats) [here](http://jekyllrb.com/docs/datafiles/).
 
 
 ### Layouts
 
 All HTML should go in the layout file for that page.
 
-Each page has a layout assigned to it in its front-matter, e.g.:
+Each page has a layout assigned to it in its front-matter, e.g. of `./index.md`:
 
 ```yml
 ---

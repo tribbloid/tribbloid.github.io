@@ -17,3 +17,10 @@ $desktop: '(min-width: 700px)';
 $padding_horizontal: 8px;
 $padding_vertical_mobile: 20px;
 $padding_vertical_desktop: 50px;
+$header_height: 46px;
+$header_height_rendered: $header_height + $padding_horizontal*2;
+
+// Mixins
+@mixin shadow {
+    box-shadow: 0 3px 3px rgba($dark_grey, 0.1);
+}

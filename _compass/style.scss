@@ -17,7 +17,8 @@ $susy: (
     debug: (
         image: show,
         color: rgba(#f39, 0.2),
-        output: overlay
+        output: overlay,
+        toggle: 'left bottom'
     )
 );
 
@@ -27,6 +28,7 @@ $susy: (
 
 /* Global styles */
 body {
+    padding-top: $header_height_rendered;
     font-family: $font_s;
     color: $dark_grey;
     -webkit-font-smoothing: antialiased;

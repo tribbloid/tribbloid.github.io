@@ -1,0 +1,11 @@
+@import 'variables';
+
+.nav-primary {
+    a {
+        font-family: $font_ss;
+
+        &.active {
+            font-weight: 700;
+        }
+    }
+}

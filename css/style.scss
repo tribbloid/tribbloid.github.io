@@ -15,12 +15,12 @@
 
 // Global styles
 body {
-    font-family: 'Domine', 'Georgia', serif;
+    font-family: $font_s;
     -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: $font_ss;
     font-weight: 400;
 }
 
@@ -34,3 +34,4 @@ a {
 }
 
 // Components and Sections
+@import 'header';

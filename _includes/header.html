@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ page.title }} &ndash; Spooky Stuff</title>
     <meta name="description" content="{{ page.meta_description }}">
+    <meta name="keywords" content="{{ page.meta_keywords }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -13,7 +14,12 @@
         <div class="logo-section">
             <a href="/">Logo goes here</a>
         </div>
+
         <div class="nav-primary">
-            <a href="/product">Product</a>
+            {% for link in site.data.navigation_primary_links %}
+            <a {% if link.actual_url == page.url %}class="active"{% endif %} href="{{ link.url }}">
+                {{ link.name }}
+            </a>
+            {% endfor %}
         </div>
     </div>

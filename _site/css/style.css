@@ -34,11 +34,11 @@ small, .font_small {
   font-size: 0.833em; }
 
 body {
-  font-family: 'Domine', 'Georgia', serif;
+  font-family: "Domine", "Georgia", serif;
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
   font-weight: 400; }
 
 a {
@@ -46,3 +46,8 @@ a {
   text-decoration: none; }
   a:hover {
     color: #00CAF8; }
+
+.nav-primary a {
+  font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; }
+  .nav-primary a.active {
+    font-weight: 700; }

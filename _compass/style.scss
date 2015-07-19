@@ -51,9 +51,16 @@ a {
     max-width: 960px;
 }
 
+@media #{$desktop} {
+    body {
+        padding-top: 0;
+    }
+}
+
 // Components and Sections
 // Common
 @import '_header';
+@import '_footer';
 
 // Home
 @import '_learn_more_cta';

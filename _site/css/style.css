@@ -39,6 +39,7 @@ head:hover ~ .container, head:hover ~ body .container { position: relative; }
 head:hover ~ .container:before, head:hover ~ body .container:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(255, 51, 153, 0.2), rgba(255, 128, 191, 0.2) 80%, transparent 80%); background-size: 8.47458%; background-origin: content-box; background-clip: content-box; background-position: left top; }
 .container:after { content: ""; display: table; clear: both; }
 
+@media (min-width: 700px) { body { padding-top: 0; } }
 /* Header */
 .header { background: white; padding: 8px 0; position: fixed; top: 0; left: 0; width: 100%; height: 46px; box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
 
@@ -59,6 +60,11 @@ head:hover ~ .container:before, head:hover ~ body .container:before { position: 
   .nav-burger { display: none; }
   .nav-primary { position: static; box-shadow: none; display: block; width: 74.57627%; float: left; margin-right: 1.69492%; float: right; margin-right: 0; text-align: right; padding-top: 0.5em; }
   .nav-primary a { display: inline-block; border: 0; } }
+/* Footer */
+.footer { padding: 20px 0; text-align: center; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; font-size: 0.9em; }
+.footer p { margin: 0; }
+
+@media (min-width: 700px) { .footer { padding: 50px 0; } }
 /* Learn More */
 .learn-more { padding: 20px 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url(/images/pattern01.png) #f8f8f8; }
 .learn-more a { background: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; color: white; text-align: center; width: 100%; float: left; margin-left: 0; margin-right: 0; padding: 10px 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }

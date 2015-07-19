@@ -1,19 +1,20 @@
----
-# Front-matter comment required for CSS preprocessing
----
 /**
  * Using SASS for CSS preprocessing
  * http://sass-lang.com/
  */
 
+// CSS reset
+@import 'compass/reset';
+
 // Importing Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Domine|Montserrat);
 
-// Importing files from ./_sass
-@import 'type_scale';
-@import 'variables';
 
-// Global styles
+// Importing files
+@import '_type_scale';
+@import '_variables';
+
+/* Global styles */
 body {
     font-family: $font_s;
     -webkit-font-smoothing: antialiased;

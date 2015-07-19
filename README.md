@@ -10,6 +10,18 @@ Run the following command to install the Gem dependencies:
     bundle install
 
 
+### CSS with Sass and Compass
+
+CSS is compiled and preprocessed with Compass. All working files are found in `_compass` and compile to `_site/css`.
+
+Prepend include the filenames of include files with `_` to avoid writing those files to the output directory.
+
+    ├── _compass
+    │   ├── _header.scss
+    │   ├── _type_scale.scss
+    │   ├── _variables.scss
+    │   └── style.scss
+
 ### Style
 
 To maintain consistent style, use the [Editorconfig plugin](http://editorconfig.org/#download) for your text editor or IDE.
@@ -30,6 +42,18 @@ Jekyll is updated frequently. To ensure that the site locally looks as it does o
 
 
 ### Making pages
+
+#### Directories
+
+This is the directory structure to maintain pretty URLs:
+
+    ├── index.md
+    └── product
+        └── index.md
+
+The Products page will live at `domain.com/product/` instead of `domain.com/product.html`.
+
+#### Page content
 
 A page, e.g. `./product/index.md`, generally looks like this:
 

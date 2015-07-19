@@ -40,24 +40,31 @@ head:hover ~ .container:before, head:hover ~ body .container:before { position: 
 .container:after { content: ""; display: table; clear: both; }
 
 /* Header */
-.logo-section { padding: 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px; }
+.logo-section { padding: 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 8px; }
 .logo-section .logo-image { background: #f39; max-width: 100%; }
 
-.nav-primary a { color: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; display: block; padding: 5px 10px; border-bottom: 1px solid #f8f8f8; }
+.nav-primary a { color: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; display: block; padding: 5px 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #f8f8f8; }
 .nav-primary a.active { font-weight: 700; }
 
 @media (min-width: 700px) { .logo-section { width: 23.72881%; float: left; margin-right: 1.69492%; }
-  .nav-primary { width: 74.57627%; float: left; margin-right: 1.69492%; float: right; margin-right: 0; text-align: right; }
+  .nav-primary { width: 74.57627%; float: left; margin-right: 1.69492%; float: right; margin-right: 0; text-align: right; padding-top: 0.7em; }
   .nav-primary a { display: inline-block; border: 0; } }
+/* Learn More */
+.learn-more { padding: 20px 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url(/images/pattern01.png) #f8f8f8; }
+.learn-more a { background: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; color: white; text-align: center; width: 100%; float: left; margin-left: 0; margin-right: 0; padding: 10px 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.learn-more a:hover { background: #027FE9; }
+
+@media (min-width: 700px) { .learn-more { padding: 50px 8px; }
+  .learn-more a { width: 66.10169%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; font-size: 1.44em; line-height: 1.2; padding: 20px 8px; } }
 /* Product banner */
-.product-banner { background: url(/images/pattern03.png) #5015BD; color: white; padding: 20px 10px; }
+.product-banner { background: url(/images/pattern03.png) #5015BD; color: white; padding: 20px 8px; }
 .product-banner .product-banner-title { font-size: 1.2em; line-height: 1.2; margin: 1.414em 0 0.5em; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; margin-top: 0; }
 .product-banner p:last-child { margin-bottom: 0; }
 
 @media (min-width: 700px) { .product-banner { text-align: center; padding: 50px 0; }
   .product-banner .product-banner-title { font-size: 1.44em; line-height: 1.2; } }
 /* Databricks component */
-.databricks { padding: 20px 10px; }
+.databricks { padding: 20px 8px; }
 .databricks .databricks-logo .databricks-logo-image { max-width: 100%; display: block; margin: 10px auto; }
 .databricks .databricks-text { text-align: center; }
 .databricks .databricks-text p { margin: 0; }
@@ -65,14 +72,14 @@ head:hover ~ .container:before, head:hover ~ body .container:before { position: 
 @media (min-width: 700px) { .databricks .databricks-logo { width: 32.20339%; float: left; margin-right: 1.69492%; }
   .databricks .databricks-text { width: 57.62712%; float: left; margin-right: 1.69492%; margin-left: 8.47458%; float: right; margin-right: 0; text-align: left; padding: 1.5em 0; } }
 /* Getting Started section */
-.getting-started { background: url(/images/pattern01.png) #f8f8f8; padding: 20px 10px; }
+.getting-started { background: url(/images/pattern01.png) #f8f8f8; padding: 20px 8px; }
 .getting-started .getting-started-text { text-align: center; }
 .getting-started .getting-started-text p { margin: 0; }
 .getting-started .getting-started-title { font-size: 1.44em; line-height: 1.2; margin: 1.414em 0 0.5em; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; margin-top: 0; }
 .getting-started .getting-started-links { margin-top: 40px; }
-.getting-started .getting-started-links a { font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; text-align: center; display: block; padding: 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: #5015BD; color: white; margin-bottom: 10px; }
+.getting-started .getting-started-links a { font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; text-align: center; display: block; padding: 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: #5015BD; color: white; margin-bottom: 10px; }
 
-@media (min-width: 700px) { .getting-started { padding: 50px 10px; }
+@media (min-width: 700px) { .getting-started { padding: 50px 8px; }
   .getting-started .getting-started-title { font-size: 1.728em; line-height: 1.2; }
   .getting-started .getting-started-links a { width: 32.20339%; float: left; margin-right: 1.69492%; }
   .getting-started .getting-started-links a:last-child { float: right; margin-right: 0; } }

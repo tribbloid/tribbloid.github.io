@@ -1,0 +1,36 @@
+---
+# Front-matter comment required for CSS preprocessing
+---
+/**
+ * Using SASS for CSS preprocessing
+ * http://sass-lang.com/
+ */
+
+// Importing Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Domine|Montserrat);
+
+// Importing files from ./_sass
+@import 'type_scale';
+@import 'variables';
+
+// Global styles
+body {
+    font-family: 'Domine', 'Georgia', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+        color: $blue_light;
+    }
+}
+
+// Components and Sections

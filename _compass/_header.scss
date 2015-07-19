@@ -19,6 +19,7 @@
         font-family: $font_ss;
         display: block;
         padding: 5px $padding_horizontal;
+        @include box-sizing(border-box);
         border-bottom: 1px solid $light_grey;
 
         &.active {
@@ -37,6 +38,7 @@
         @include span(9);
         @include omega;
         text-align: right;
+        padding-top: 0.7em;
 
         a {
             display: inline-block;

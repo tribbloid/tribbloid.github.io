@@ -21,11 +21,6 @@ $susy: (
     )
 );
 
-// Importing Google Fonts
-// TODO: import in the html
-// @import url(http://fonts.googleapis.com/css?family=Domine|Montserrat);
-
-
 // Importing files
 @import '_type_scale';
 @import '_variables';
@@ -37,10 +32,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
 }
-
-// h1, h2, h3, h4, h5 {
-//     font-family: $font_ss;
-// }
 
 a {
     color: $blue;
@@ -57,13 +48,14 @@ a {
     max-width: 960px;
 }
 
-// @media #{$desktop} {
-//     body {
-//     }
-// }
-
 // Components and Sections
+// Common
 @import '_header';
+
+// Home
+@import '_learn_more_cta';
+
+// Product
 @import '_product_banner';
 @import '_databricks';
 @import '_getting_started';

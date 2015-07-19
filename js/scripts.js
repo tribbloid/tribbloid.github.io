@@ -1,7 +1,6 @@
 (function ($, Modernizr, window, document){
     // CSS and JS desktop breakpoint should match
     var isDesktop = Modernizr.mq('(min-width: 700px)');
-    var isMobile = !isDesktop;
 
     $(function () {
         // DOM ready
@@ -29,5 +28,8 @@
             evt.preventDefault();
         });
     }
+
+    // when disabling default iOS a:active highlight, this allows custom :active styles to show
+    document.addEventListener('touchstart', function() {}, true);
 
 })(window.jQuery, window.Modernizr, window, document);

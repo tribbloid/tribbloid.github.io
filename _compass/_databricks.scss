@@ -4,7 +4,7 @@
 
     .databricks-logo {
         .databricks-logo-image {
-            max-width: 100%;
+            max-width: 70%;
             display: block;
             margin: 10px auto;
         }
@@ -23,6 +23,10 @@
     .databricks {
         .databricks-logo {
             @include span(4);
+
+            .databricks-logo-image {
+                max-width: 100%;
+            }
         }
 
         .databricks-text {

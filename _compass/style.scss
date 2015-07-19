@@ -38,6 +38,7 @@ body {
 a {
     color: $blue;
     text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 
     &:hover {
         color: $blue_light;

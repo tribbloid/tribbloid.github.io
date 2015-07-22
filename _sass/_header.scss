@@ -42,12 +42,12 @@
 }
 
 .nav-primary {
+    background: white;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
     display: none;
-    background: white;
     z-index: 100;
     @include shadow;
 
@@ -80,7 +80,7 @@
     }
 
     .logo-section {
-        @include col(3/12);
+        @include span(3/12);
     }
 
     .nav-burger {
@@ -91,8 +91,7 @@
         position: static;
         box-shadow: none;
         display: block;
-        @include col(9/12, $cycle: 1);
-        // @include omega;
+        @include span(9/12);
         text-align: right;
         padding-top: 0.5em;
 

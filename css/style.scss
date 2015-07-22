@@ -5,51 +5,12 @@
  * http://sass-lang.com/
  */
 
-// CSS reset
-// @import 'compass/utilities/general/clearfix';
-// @import 'compass/css3/box-sizing';
-// @import 'compass/reset';
-
-@import 'jeet/index';
-
-@mixin pie-clearfix {
-    &:after {
-        content: " ";
-        clear: both;
-        display: block;
-    }
-}
-
-@mixin box-sizing($value: border-box) {
-    box-sizing: $value;
-    -webkit-box-sizing: $value;
-    -moz-box-sizing: $value;
-}
-
-@mixin container {
-    @include pie-clearfix;
-    margin: 0 auto;
-    max-width: 960px;
-}
-
-
-// Import the grid system
-// @import 'susy';
-// $susy: (
-//     columns: 12,
-//     gutters: 0.25,
-//     math: fluid,
-//     debug: (
-//         image: show,
-//         color: rgba(#f39, 0.2),
-//         output: overlay,
-//         toggle: 'left bottom'
-//     )
-// );
-
-// Importing files
-@import '_type_scale';
-@import '_variables';
+// Imports
+@import '_reset';
+@import 'jeet/index'; // grid system
+@import '_type_scale'; // typography
+@import '_variables'; // colours, values
+@import '_mixins'; // mixins
 
 /* Global styles */
 body {
@@ -69,8 +30,6 @@ a {
         color: $blue_light;
     }
 }
-
-
 
 .container {
     @include container;

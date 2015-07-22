@@ -2,6 +2,73 @@
  * Using SASS for CSS preprocessing
  * http://sass-lang.com/
  */
+/**
+ * CSS reset
+ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
 /*  Syntax Quick Reference
   --------------------------
   column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
@@ -193,12 +260,14 @@ a {
     color: #00CAF8; }
 
 .container {
+  *zoom: 1;
   margin: 0 auto;
   max-width: 960px; }
+  .container:before, .container:after {
+    content: '';
+    display: table; }
   .container:after {
-    content: " ";
-    clear: both;
-    display: block; }
+    clear: both; }
 
 @media (min-width: 700px) {
   body {
@@ -240,12 +309,12 @@ a {
     cursor: pointer; }
 
 .nav-primary {
+  background: white;
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
   display: none;
-  background: white;
   z-index: 100;
   box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
   .nav-primary a {
@@ -271,11 +340,9 @@ a {
   .logo-section {
     float: left;
     clear: none;
-    width: 22.75%;
+    width: 25%;
     margin-left: 0;
-    margin-right: 3%; }
-    .logo-section:last-child {
-      margin-right: 0; }
+    margin-right: 0; }
 
   .nav-burger {
     display: none; }
@@ -286,16 +353,11 @@ a {
     display: block;
     float: left;
     clear: none;
-    width: 74.25%;
+    width: 75%;
     margin-left: 0;
-    margin-right: 3%;
+    margin-right: 0;
     text-align: right;
     padding-top: 0.5em; }
-    .nav-primary:nth-of-type(1n) {
-      margin-right: 0;
-      float: right; }
-    .nav-primary:nth-of-type(1n + 1) {
-      clear: both; }
     .nav-primary a {
       display: inline-block;
       border: 0; } }

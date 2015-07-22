@@ -13,10 +13,17 @@
 .logo-section {
     @include box-sizing(border-box);
     margin-bottom: $padding_horizontal;
+    height: $header_height;
+    padding-left: $padding_horizontal;
+
+    a {
+        max-width: 100%;
+        max-height: 100%;
+    }
 
     .logo-image {
-        background: #f39;
         max-width: 100%;
+        max-height: 100%;
     }
 }
 

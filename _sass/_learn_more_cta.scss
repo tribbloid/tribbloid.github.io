@@ -26,8 +26,7 @@
         padding: $padding_vertical_desktop $padding_horizontal;
 
         a {
-            @include col(8/12, $offset: 2);
-            // @include push(2);
+            @include col(8/12, $offset: 2/12);
             @include title-3;
             padding: 20px $padding_horizontal;
         }

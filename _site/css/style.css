@@ -413,6 +413,14 @@ a {
       padding: 20px 8px; }
       .learn-more a:last-child {
         margin-right: 0; } }
+/* Slider */
+.slider .slide .slide-image {
+  max-width: 100%; }
+.slider .slide .slide-text-section {
+  text-align: center; }
+.slider .slide .slide-text {
+  font-weight: 700; }
+
 /* Product banner */
 .product-banner {
   background: url(/images/pattern03.png) #5015BD;

@@ -1,0 +1,12 @@
+<div class="slider">
+    {% for slide in site.data.slider %}
+    <div class="slide">
+<!-- debug -->
+<img WIDTH="400" class="slide-image" src="/images/slider/{{ slide.image }}" />
+
+        <div class="slide-text-section">
+            <span class="slide-text">{{ slide.title }}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>

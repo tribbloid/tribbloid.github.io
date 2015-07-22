@@ -1,0 +1,13 @@
+.button {
+    background: $purple;
+    font-family: $font_ss;
+    display: block;
+    color: white;
+    text-align: center;
+    @include box-sizing(border-box);
+
+    &:hover {
+        background: $blue;
+        color: white;
+    }
+}

@@ -6,14 +6,9 @@
     // background: url(/images/pattern05.png) $light_grey;
     // background: url(/images/pattern08.png) $light_grey;
 
-    a {
-        background: $purple;
-        font-family: $font_ss;
-        color: white;
-        text-align: center;
+    .button {
         @include col(12/12);
         padding: 10px 0;
-        @include box-sizing(border-box);
 
         &:hover {
             background: $blue;
@@ -25,7 +20,7 @@
     .learn-more {
         padding: $padding_vertical_desktop $padding_horizontal;
 
-        a {
+        .button {
             @include col(8/12, $offset: 2/12);
             @include title-3;
             padding: 20px $padding_horizontal;

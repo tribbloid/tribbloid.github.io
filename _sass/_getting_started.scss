@@ -24,14 +24,8 @@
     .getting-started-links {
         margin-top: $padding_vertical_mobile * 2;
 
-        a {
-            font-family: $font_ss;
-            text-align: center;
-            display: block;
+        .button {
             padding: $padding_horizontal;
-            @include box-sizing(border-box);
-            background: $purple;
-            color: white;
             margin-bottom: 10px;
         }
     }
@@ -46,12 +40,8 @@
         }
 
         .getting-started-links {
-            a {
+            .button {
                 @include col(4/12, $cycle: 3);
-
-                // &:last-child {
-                //     @include omega;
-                // }
             }
         }
     }

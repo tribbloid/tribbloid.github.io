@@ -59,6 +59,10 @@
         @include box-sizing(border-box);
         border-bottom: 1px solid $light_grey;
 
+        &:hover {
+            color: $yellow;
+        }
+
         &:last-child {
             border: 0;
         }

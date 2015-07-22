@@ -1,0 +1,80 @@
+.demo-section {
+    // background: url(/images/pattern01.png) $blue;
+    // background: url(/images/pattern05.png) $light_grey;
+    // background: url(/images/pattern08.png) $light_grey;
+    padding: $padding_vertical_mobile $padding_horizontal;
+
+    .demos-text {
+        text-align: center;
+    }
+
+    .demos-title {
+        font-family: $font_ss;
+        text-align: center;
+        @include title-3;
+        @include heading-margins;
+        margin-top: 0;
+    }
+
+    .demo {
+        padding: $padding_vertical_mobile/2 0;
+        margin-bottom: $padding_horizontal;
+        @include cf;
+    }
+
+    .demo-text {
+    }
+
+    .demo-title {
+        font-family: $font_ss;
+        @include heading-margins;
+    }
+
+    .demo-image {
+        background: $light_grey;
+        width: 100%;
+        min-height: 250px;
+    }
+}
+
+@media #{$desktop} {
+    .demo-section {
+        padding: $padding_vertical_desktop $padding_horizontal;
+
+        .demos-title {
+            @include title-2;
+        }
+
+        .demo {
+            padding: $padding_vertical_desktop 0;
+
+            &:nth-child(2n) {
+                .demo-text {
+                    float: left;
+                    clear: none;
+                }
+
+                .demo-image {
+                    float: right;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .demo-text {
+            @include col(6/12);
+        }
+
+        .demo-title {
+            @include title-3;
+            @include heading-margins;
+        }
+
+        .demo-image {
+            @include col(6/12);
+        }
+
+
+
+    }
+}

@@ -318,7 +318,7 @@ a {
   z-index: 100;
   box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
   .nav-primary a {
-    color: #5015BD;
+    color: #E1A209;
     font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
     display: block;
     padding: 5px 8px;
@@ -431,7 +431,7 @@ a {
 
 /* Product banner */
 .product-banner {
-  background: url(/images/pattern01.png) #027FE9;
+  background: url(/images/pattern01.png) #63B411;
   color: white;
   padding: 20px 8px; }
   .product-banner .product-banner-title {

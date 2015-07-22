@@ -1,6 +1,9 @@
 /* Databricks component */
 .databricks {
     padding: $padding_vertical_mobile $padding_horizontal;
+    background: lighten($light_grey, 1%);
+    border-top: 1px solid darken($light_grey, 2%);
+    border-bottom: 1px solid darken($light_grey, 2%);
 
     .databricks-logo {
         .databricks-logo-image {

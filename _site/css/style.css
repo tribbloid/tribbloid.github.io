@@ -452,7 +452,10 @@ a {
       line-height: 1.2; } }
 /* Databricks component */
 .databricks {
-  padding: 20px 8px; }
+  padding: 20px 8px;
+  background: #fbfbfb;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3; }
   .databricks .databricks-logo .databricks-logo-image {
     max-width: 70%;
     display: block;
@@ -581,4 +584,54 @@ a {
       margin-left: 0;
       margin-right: 3%; }
       .demo-section .demo-image:last-child {
+        margin-right: 0; } }
+.feature-section {
+  padding: 20px 8px; }
+  .feature-section .feature {
+    padding: 10px 0;
+    margin-bottom: 8px;
+    *zoom: 1; }
+    .feature-section .feature:before, .feature-section .feature:after {
+      content: '';
+      display: table; }
+    .feature-section .feature:after {
+      clear: both; }
+  .feature-section .feature-title {
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+    margin: 1.414em 0 0.5em; }
+  .feature-section .feature-image {
+    background: #f8f8f8;
+    width: 100%;
+    min-height: 250px; }
+
+@media (min-width: 700px) {
+  .feature-section {
+    padding: 50px 8px; }
+    .feature-section .feature {
+      padding: 50px 0; }
+      .feature-section .feature:nth-child(2n) .feature-text {
+        float: left;
+        clear: none; }
+      .feature-section .feature:nth-child(2n) .feature-image {
+        float: right;
+        margin-right: 0; }
+    .feature-section .feature-text {
+      float: left;
+      clear: none;
+      width: 48.5%;
+      margin-left: 0;
+      margin-right: 3%; }
+      .feature-section .feature-text:last-child {
+        margin-right: 0; }
+    .feature-section .feature-title {
+      font-size: 1.44em;
+      line-height: 1.2;
+      margin: 1.414em 0 0.5em; }
+    .feature-section .feature-image {
+      float: left;
+      clear: none;
+      width: 48.5%;
+      margin-left: 0;
+      margin-right: 3%; }
+      .feature-section .feature-image:last-child {
         margin-right: 0; } }

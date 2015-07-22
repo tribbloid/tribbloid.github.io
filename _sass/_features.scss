@@ -1,35 +1,24 @@
-.demo-section {
+.feature-section {
     // background: url(/images/pattern01.png) $blue;
     // background: url(/images/pattern05.png) $light_grey;
     // background: url(/images/pattern08.png) $light_grey;
     padding: $padding_vertical_mobile $padding_horizontal;
 
-    .demos-text {
-        text-align: center;
-    }
-
-    .demos-title {
-        font-family: $font_ss;
-        text-align: center;
-        @include title-3;
-        @include heading-margins;
-        margin-top: 0;
-    }
-
-    .demo {
+    .feature {
         padding: $padding_vertical_mobile/2 0;
         margin-bottom: $padding_horizontal;
         @include cf;
     }
 
-    .demo-text {}
+    .feature-text {
+    }
 
-    .demo-title {
+    .feature-title {
         font-family: $font_ss;
         @include heading-margins;
     }
 
-    .demo-image {
+    .feature-image {
         background: $light_grey;
         width: 100%;
         min-height: 250px;
@@ -37,41 +26,39 @@
 }
 
 @media #{$desktop} {
-    .demo-section {
+    .feature-section {
         padding: $padding_vertical_desktop $padding_horizontal;
 
-        .demos-title {
-            @include title-2;
-        }
-
-        .demo {
+        .feature {
             padding: $padding_vertical_desktop 0;
 
             &:nth-child(2n) {
-                .demo-text {
+                .feature-text {
                     float: left;
                     clear: none;
                 }
 
-                .demo-image {
+                .feature-image {
                     float: right;
                     margin-right: 0;
                 }
             }
         }
 
-        .demo-text {
+        .feature-text {
             @include col(6/12);
         }
 
-        .demo-title {
+        .feature-title {
             @include title-3;
             @include heading-margins;
         }
 
-        .demo-image {
+        .feature-image {
             @include col(6/12);
         }
+
+
 
     }
 }

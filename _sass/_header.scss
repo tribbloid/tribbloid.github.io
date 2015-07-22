@@ -80,7 +80,7 @@
     }
 
     .logo-section {
-        @include span(3);
+        @include col(3/12);
     }
 
     .nav-burger {
@@ -91,8 +91,8 @@
         position: static;
         box-shadow: none;
         display: block;
-        @include span(9);
-        @include omega;
+        @include col(9/12, $cycle: 1);
+        // @include omega;
         text-align: right;
         padding-top: 0.5em;
 

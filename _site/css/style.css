@@ -1,103 +1,451 @@
-/** Using SASS for CSS preprocessing http://sass-lang.com/ */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+/**
+ * Using SASS for CSS preprocessing
+ * http://sass-lang.com/
+ */
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/**
+ * Grid settings.
+ * All values are defaults and can therefore be easily overidden.
+ */
+/**
+ * List functions courtesy of the wonderful folks at Team Sass.
+ * Check out their awesome grid: Singularity.
+ */
+/**
+ * Get  percentage from a given ratio.
+ * @param {number} [$ratio=1] - The column ratio of the element.
+ * @returns {number} - The percentage value.
+ */
+/**
+ * Work out the column widths based on the ratio and gutter sizes.
+ * @param {number} [$ratios=1] - The column ratio of the element.
+ * @param {number} [$gutter=$jeet-gutter] - The gutter for the column.
+ * @returns {list} $width $gutter - A list containing the with and gutter for the element.
+ */
+/**
+ * Get the set layout direction for the project.
+ * @returns {string} $direction - The layout direction.
+ */
+/**
+ * Replace a specified list value with a new value (uses built in set-nth() if available)
+ * @param {list} $list - The list of values you want to alter.
+ * @param {number} $index - The index of the list item you want to replace.
+ * @param {*} $value - The value you want to replace $index with.
+ * @returns {list} $list - The list with the value replaced or removed.
+ * @warn if an invalid index is supplied.
+ */
+/**
+ * Reverse a list (progressively enhanced for Sass 3.3)
+ * @param {list} $list - The list of values you want to reverse.
+ * @returns {list} $result - The reversed list.
+ */
+/**
+ * Get the opposite direction to a given value.
+ * @param {string} $dir - The direction you want the opposite of.
+ * @returns {string} - The opposite direction to $dir.
+ * @warn if an incorrect string is provided.
+ */
+/**
+ * Perform a value into a percentage value.
+ * @param {number} $value - The value which should be converted.
+ * @returns {number} $value - The percentage.
+ */
+/**
+ * Style an element as a column with a gutter.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [$cycle=0] - Easily create an nth column grid where $cycle equals the number of columns.
+ * @param {number} [$uncycle=0] - Undo a previous cycle value to allow for a new one.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Aliases for j-column().
+ */
+/**
+ * Get the width of a column and nothing else.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Aliases for j-column-width().
+ */
+/**
+ * Get the gutter size of a column and nothing else.
+ * @param {number} [ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [gutter=jeet.gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Alias for j-column-gutter().
+ */
+/**
+ * Style an element as a column without any gutters for a seamless row.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [cycle=0] - Easily create an nth column grid where cycle equals the number of columns.
+ * @param {number} [uncycle=0] - Undo a previous cycle value to allow for a new one.
+ */
+/**
+ * Alias for j-span().
+ */
+/**
+ * Reorder columns without altering the HTML.
+ * @param {number} [$ratios=0] - Specify how far along you want the element to move.
+ * @param {string} [$col-or-span=column] - Specify whether the element has a gutter or not.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Alias for j-shift().
+ */
+/**
+ * Reset an element that has had shift() applied to it.
+ */
+/**
+ * Alias for j-unshift().
+ */
+/**
+ * View the grid and its layers for easy debugging.
+ * @param {string} [$color=black] - The background tint applied.
+ * @param {boolean} [$important=false] - Whether to apply the style as !important.
+ */
+/**
+ * Aliases for j-edit().
+ */
+/**
+ * Horizontally center an element.
+ * @param {number} [$max-width=1410px] - The max width the element can be.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ */
+/**
+ * Alias for j-center().
+ */
+/**
+ * Uncenter an element.
+ */
+/**
+ * Alias for j-uncenter().
+ */
+/**
+ * Stack an element so that nothing is either side of it.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ * @param {boolean/string} [$align=false] - Specify the text align for the element.
+ */
+/**
+ * Alias for j-stack().
+ */
+/**
+ * Unstack an element.
+ */
+/**
+ * Alias for j-unstack().
+ */
+/**
+ * Center an element on either or both axes.
+ * @requires A parent container with relative positioning.
+ * @param {string} [$direction=both] - Specify which axes to center the element on.
+ */
+/**
+ * Alias for j-align().
+ */
+/**
+ * Apply a clearfix to an element.
+ */
+/**
+ * Alias for j-cf().
+ */
+html {
+  font-size: 1.125em; }
 
-html { line-height: 1; }
+body {
+  line-height: 1.45; }
 
-ol, ul { list-style: none; }
+p {
+  margin-bottom: 1.3em; }
 
-table { border-collapse: collapse; border-spacing: 0; }
-
-caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
-
-q, blockquote { quotes: none; }
-q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
-
-a img { border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
-
-html { font-size: 1.125em; }
-
-body { line-height: 1.45; }
-
-p { margin-bottom: 1.3em; }
-
-.font_small { font-size: 0.833em; line-height: 1.2; }
+.font_small {
+  font-size: 0.833em;
+  line-height: 1.2; }
 
 /* Global styles */
-body { padding-top: 62px; font-family: "Domine", "Georgia", serif; color: #444; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; }
+body {
+  padding-top: 62px;
+  font-family: "Domine", "Georgia", serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none; }
 
-a { color: #027FE9; text-decoration: none; -webkit-tap-highlight-color: transparent; }
-a:hover { color: #00CAF8; }
+a {
+  color: #027FE9;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
+  a:hover {
+    color: #00CAF8; }
 
-.container { max-width: 100%; margin-left: auto; margin-right: auto; *zoom: 1; max-width: 960px; }
-.container:after { content: " "; display: block; clear: both; }
-head { display: block; position: fixed; : 10px; : 10px; z-index: 999; color: #333; background: rgba(255, 255, 255, 0.25); }
-head:before { content: "|||"; display: block; padding: 5px 10px; font-family: sans-serif; font-size: 16px; font-weight: bold; }
-head:hover { background: rgba(255, 255, 255, 0.5); color: red; }
-head:hover ~ .container, head:hover ~ body .container { position: relative; }
-head:hover ~ .container:before, head:hover ~ body .container:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(255, 51, 153, 0.2), rgba(255, 128, 191, 0.2) 80%, transparent 80%); background-size: 8.47458%; background-origin: content-box; background-clip: content-box; background-position: left top; }
-.container:after { content: ""; display: table; clear: both; }
+.container {
+  max-width: 960px; }
+  .container:after {
+    content: " ";
+    clear: both;
+    display: block; }
 
-@media (min-width: 700px) { body { padding-top: 0; } }
+@media (min-width: 700px) {
+  body {
+    padding-top: 0; } }
 /* Header */
-.header { background: white; padding: 8px 0; position: fixed; top: 0; left: 0; width: 100%; height: 46px; box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
+.header {
+  background: white;
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 46px;
+  box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
 
-.logo-section { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 8px; height: 46px; padding-left: 8px; }
-.logo-section a { max-width: 100%; max-height: 100%; }
-.logo-section .logo-image { max-width: 100%; max-height: 100%; }
+.logo-section {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 8px;
+  height: 46px;
+  padding-left: 8px; }
+  .logo-section a {
+    max-width: 100%;
+    max-height: 100%; }
+  .logo-section .logo-image {
+    max-width: 100%;
+    max-height: 100%; }
 
-.nav-burger { position: absolute; top: 8px; right: 8px; font-size: 1.2em; background: #f8f8f8; padding: 12px 16px; line-height: 1; }
-.nav-burger:hover { cursor: pointer; }
+.nav-burger {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 1.2em;
+  background: #f8f8f8;
+  padding: 12px 16px;
+  line-height: 1; }
+  .nav-burger:hover {
+    cursor: pointer; }
 
-.nav-primary { position: absolute; top: 60px; left: 0; width: 100%; display: none; background: white; z-index: 100; box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
-.nav-primary a { color: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; display: block; padding: 5px 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #f8f8f8; }
-.nav-primary a:last-child { border: 0; }
-.nav-primary a.active { font-weight: 700; }
-.nav-primary a:active { background: #fbfbfb; }
+.nav-primary {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  display: none;
+  background: white;
+  z-index: 100;
+  box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
+  .nav-primary a {
+    color: #5015BD;
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+    display: block;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-bottom: 1px solid #f8f8f8; }
+    .nav-primary a:last-child {
+      border: 0; }
+    .nav-primary a.active {
+      font-weight: 700; }
+    .nav-primary a:active {
+      background: #fbfbfb; }
 
-@media (min-width: 700px) { .header { position: static; }
-  .logo-section { width: 23.72881%; float: left; margin-right: 1.69492%; }
-  .nav-burger { display: none; }
-  .nav-primary { position: static; box-shadow: none; display: block; width: 74.57627%; float: left; margin-right: 1.69492%; float: right; margin-right: 0; text-align: right; padding-top: 0.5em; }
-  .nav-primary a { display: inline-block; border: 0; } }
+@media (min-width: 700px) {
+  .header {
+    position: static; }
+
+  .logo-section {
+    float: left;
+    clear: none;
+    width: 22.75%;
+    margin-left: 0;
+    margin-right: 3%; }
+    .logo-section:last-child {
+      margin-right: 0; }
+
+  .nav-burger {
+    display: none; }
+
+  .nav-primary {
+    position: static;
+    box-shadow: none;
+    display: block;
+    float: left;
+    clear: none;
+    width: 74.25%;
+    margin-left: 0;
+    margin-right: 3%;
+    text-align: right;
+    padding-top: 0.5em; }
+    .nav-primary:nth-of-type(1n) {
+      margin-right: 0;
+      float: right; }
+    .nav-primary:nth-of-type(1n + 1) {
+      clear: both; }
+    .nav-primary a {
+      display: inline-block;
+      border: 0; } }
 /* Footer */
-.footer { padding: 20px 0; text-align: center; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; font-size: 0.9em; }
-.footer p { margin: 0; }
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 0.9em; }
+  .footer p {
+    margin: 0; }
 
-@media (min-width: 700px) { .footer { padding: 50px 0; } }
+@media (min-width: 700px) {
+  .footer {
+    padding: 50px 0; } }
 /* Learn More */
-.learn-more { padding: 20px 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url(/images/pattern01.png) #f8f8f8; }
-.learn-more a { background: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; color: white; text-align: center; width: 100%; float: left; margin-left: 0; margin-right: 0; padding: 10px 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.learn-more a:hover { background: #027FE9; }
+.learn-more {
+  padding: 20px 8px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: url(/images/pattern01.png) #f8f8f8; }
+  .learn-more a {
+    background: #5015BD;
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+    color: white;
+    text-align: center;
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; }
+    .learn-more a:last-child {
+      margin-right: 0; }
+    .learn-more a:hover {
+      background: #027FE9; }
 
-@media (min-width: 700px) { .learn-more { padding: 50px 8px; }
-  .learn-more a { width: 66.10169%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; font-size: 1.44em; line-height: 1.2; padding: 20px 8px; } }
+@media (min-width: 700px) {
+  .learn-more {
+    padding: 50px 8px; }
+    .learn-more a {
+      float: left;
+      clear: none;
+      width: 65.66667%;
+      margin-left: 206%;
+      margin-right: 3%;
+      font-size: 1.44em;
+      line-height: 1.2;
+      padding: 20px 8px; }
+      .learn-more a:last-child {
+        margin-right: 0; } }
 /* Product banner */
-.product-banner { background: url(/images/pattern03.png) #5015BD; color: white; padding: 20px 8px; }
-.product-banner .product-banner-title { font-size: 1.2em; line-height: 1.2; margin: 1.414em 0 0.5em; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; margin-top: 0; }
-.product-banner p:last-child { margin-bottom: 0; }
+.product-banner {
+  background: url(/images/pattern03.png) #5015BD;
+  color: white;
+  padding: 20px 8px; }
+  .product-banner .product-banner-title {
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin: 1.414em 0 0.5em;
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+    margin-top: 0; }
+  .product-banner p:last-child {
+    margin-bottom: 0; }
 
-@media (min-width: 700px) { .product-banner { text-align: center; padding: 50px 0; }
-  .product-banner .product-banner-title { font-size: 1.44em; line-height: 1.2; } }
+@media (min-width: 700px) {
+  .product-banner {
+    text-align: center;
+    padding: 50px 0; }
+    .product-banner .product-banner-title {
+      font-size: 1.44em;
+      line-height: 1.2; } }
 /* Databricks component */
-.databricks { padding: 20px 8px; }
-.databricks .databricks-logo .databricks-logo-image { max-width: 70%; display: block; margin: 10px auto; }
-.databricks .databricks-text { text-align: center; }
-.databricks .databricks-text p { margin: 0; }
+.databricks {
+  padding: 20px 8px; }
+  .databricks .databricks-logo .databricks-logo-image {
+    max-width: 70%;
+    display: block;
+    margin: 10px auto; }
+  .databricks .databricks-text {
+    text-align: center; }
+    .databricks .databricks-text p {
+      margin: 0; }
 
-@media (min-width: 700px) { .databricks .databricks-logo { width: 32.20339%; float: left; margin-right: 1.69492%; }
-  .databricks .databricks-logo .databricks-logo-image { max-width: 100%; }
-  .databricks .databricks-text { width: 57.62712%; float: left; margin-right: 1.69492%; margin-left: 8.47458%; float: right; margin-right: 0; text-align: left; padding: 1.5em 0; } }
+@media (min-width: 700px) {
+  .databricks .databricks-logo {
+    float: left;
+    clear: none;
+    width: 409%;
+    margin-left: 0;
+    margin-right: 3%; }
+    .databricks .databricks-logo:last-child {
+      margin-right: 0; }
+    .databricks .databricks-logo .databricks-logo-image {
+      max-width: 100%; }
+  .databricks .databricks-text {
+    float: left;
+    clear: none;
+    width: 57.08333%;
+    margin-left: 103%;
+    margin-right: 3%;
+    text-align: left;
+    padding: 1.5em 0; }
+    .databricks .databricks-text:last-child {
+      margin-right: 0; } }
 /* Getting Started section */
-.getting-started { background: url(/images/pattern01.png) #f8f8f8; padding: 20px 8px; }
-.getting-started .getting-started-text { text-align: center; }
-.getting-started .getting-started-text p { margin: 0; }
-.getting-started .getting-started-title { font-size: 1.44em; line-height: 1.2; margin: 1.414em 0 0.5em; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; margin-top: 0; }
-.getting-started .getting-started-links { margin-top: 40px; }
-.getting-started .getting-started-links a { font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; text-align: center; display: block; padding: 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: #5015BD; color: white; margin-bottom: 10px; }
+.getting-started {
+  background: url(/images/pattern01.png) #f8f8f8;
+  padding: 20px 8px; }
+  .getting-started .getting-started-text {
+    text-align: center; }
+    .getting-started .getting-started-text p {
+      margin: 0; }
+  .getting-started .getting-started-title {
+    font-size: 1.44em;
+    line-height: 1.2;
+    margin: 1.414em 0 0.5em;
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+    margin-top: 0; }
+  .getting-started .getting-started-links {
+    margin-top: 40px; }
+    .getting-started .getting-started-links a {
+      font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+      text-align: center;
+      display: block;
+      padding: 8px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      background: #5015BD;
+      color: white;
+      margin-bottom: 10px; }
 
-@media (min-width: 700px) { .getting-started { padding: 50px 8px; }
-  .getting-started .getting-started-title { font-size: 1.728em; line-height: 1.2; }
-  .getting-started .getting-started-links a { width: 32.20339%; float: left; margin-right: 1.69492%; }
-  .getting-started .getting-started-links a:last-child { float: right; margin-right: 0; } }
+@media (min-width: 700px) {
+  .getting-started {
+    padding: 50px 8px; }
+    .getting-started .getting-started-title {
+      font-size: 1.728em;
+      line-height: 1.2; }
+    .getting-started .getting-started-links a {
+      float: left;
+      clear: none;
+      width: 31.33333%;
+      margin-left: 0;
+      margin-right: 3%; }
+      .getting-started .getting-started-links a:nth-of-type(3n) {
+        margin-right: 0;
+        float: right; }
+      .getting-started .getting-started-links a:nth-of-type(3n + 1) {
+        clear: both; } }

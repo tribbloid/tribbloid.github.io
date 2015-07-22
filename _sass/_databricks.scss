@@ -22,7 +22,7 @@
 @media #{$desktop} {
     .databricks {
         .databricks-logo {
-            @include span(4);
+            @include col(4);
 
             .databricks-logo-image {
                 max-width: 100%;
@@ -30,9 +30,9 @@
         }
 
         .databricks-text {
-            @include span(7);
-            @include push(1);
-            @include omega;
+            @include col(7/12, $offset: 1);
+            // @include push(1);
+            // @include omega;
             text-align: left;
             padding: 1.5em 0;
         }

@@ -7,10 +7,10 @@
   url: /download
   actual_url: /download/index.html
 
-- name: Company
-  url: /company
-  actual_url: /company/index.html
+# - name: Company
+#   url: /company
+#   actual_url: /company/index.html
 
-- name: Contact
-  url: /contact
-  actual_url: /contact/index.html
+# - name: Contact
+#   url: /contact
+#   actual_url: /contact/index.html

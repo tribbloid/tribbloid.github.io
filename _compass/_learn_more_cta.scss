@@ -1,0 +1,35 @@
+/* Learn More */
+.learn-more {
+    padding: $padding_vertical_mobile $padding_horizontal;
+    @include box-sizing(border-box);
+    background: url(/images/pattern01.png) $light_grey;
+    // background: url(/images/pattern05.png) $light_grey;
+    // background: url(/images/pattern08.png) $light_grey;
+
+    a {
+        background: $purple;
+        font-family: $font_ss;
+        color: white;
+        text-align: center;
+        @include span(12);
+        padding: 10px 0;
+        @include box-sizing(border-box);
+
+        &:hover {
+            background: $blue;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .learn-more {
+        padding: $padding_vertical_desktop $padding_horizontal;
+
+        a {
+            @include span(8);
+            @include push(2);
+            @include title-3;
+            padding: 20px $padding_horizontal;
+        }
+    }
+}

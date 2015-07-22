@@ -1,0 +1,21 @@
+{% include header.html %}
+
+<div class="product-banner">
+    <div class="container">
+        <h2 class="product-banner-title">{{ page.summary }}</h2>
+
+        <div class="main-content">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+{% include databricks.html %}
+
+<!-- todo: foreach in features show feature -->
+
+<!-- todo: foreach in demos show demo -->
+
+{% include getting_started_cta.html %}
+
+{% include footer.html %}

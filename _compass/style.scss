@@ -1,0 +1,71 @@
+/**
+ * Using SASS for CSS preprocessing
+ * http://sass-lang.com/
+ */
+
+// CSS reset
+@import 'compass/utilities/general/clearfix';
+@import 'compass/css3/box-sizing';
+@import 'compass/reset';
+
+// Import the grid system
+@import 'susy';
+$susy: (
+    columns: 12,
+    gutters: 0.25,
+    math: fluid,
+    debug: (
+        image: show,
+        color: rgba(#f39, 0.2),
+        output: overlay,
+        toggle: 'left bottom'
+    )
+);
+
+// Importing files
+@import '_type_scale';
+@import '_variables';
+
+/* Global styles */
+body {
+    padding-top: $header_height_rendered;
+    font-family: $font_s;
+    color: $dark_grey;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    &:hover {
+        color: $blue_light;
+    }
+}
+
+.container {
+    @include container;
+    @include pie-clearfix;
+    max-width: 960px;
+}
+
+@media #{$desktop} {
+    body {
+        padding-top: 0;
+    }
+}
+
+// Components and Sections
+// Common
+@import '_header';
+@import '_footer';
+
+// Home
+@import '_learn_more_cta';
+
+// Product
+@import '_product_banner';
+@import '_databricks';
+@import '_getting_started';

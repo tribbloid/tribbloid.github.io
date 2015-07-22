@@ -1,0 +1,10 @@
+require:
+  - susy
+
+output_style: compact
+
+sass_options:
+  unix_newlines: true
+  debug_info: false
+  line_numbers: false
+  line_comments: false

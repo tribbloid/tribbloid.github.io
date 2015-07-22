@@ -1,0 +1,26 @@
+// Colours
+// $purple_dark: #3D0A49;
+$purple: #5015BD;
+$blue: #027FE9;
+$blue_light: #00CAF8;
+$light_grey: #f8f8f8;
+$dark_grey: #444;
+
+// Fonts
+$font_ss: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+$font_s: 'Domine', 'Georgia', serif;
+
+// Media Queries
+$desktop: '(min-width: 700px)';
+
+// Values
+$padding_horizontal: 8px;
+$padding_vertical_mobile: 20px;
+$padding_vertical_desktop: 50px;
+$header_height: 46px;
+$header_height_rendered: $header_height + $padding_horizontal*2;
+
+// Mixins
+@mixin shadow {
+    box-shadow: 0 3px 3px rgba($dark_grey, 0.1);
+}

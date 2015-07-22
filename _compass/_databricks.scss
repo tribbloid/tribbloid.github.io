@@ -1,0 +1,40 @@
+/* Databricks component */
+.databricks {
+    padding: $padding_vertical_mobile $padding_horizontal;
+
+    .databricks-logo {
+        .databricks-logo-image {
+            max-width: 70%;
+            display: block;
+            margin: 10px auto;
+        }
+    }
+
+    .databricks-text {
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .databricks {
+        .databricks-logo {
+            @include span(4);
+
+            .databricks-logo-image {
+                max-width: 100%;
+            }
+        }
+
+        .databricks-text {
+            @include span(7);
+            @include push(1);
+            @include omega;
+            text-align: left;
+            padding: 1.5em 0;
+        }
+    }
+}

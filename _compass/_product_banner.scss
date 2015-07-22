@@ -1,0 +1,31 @@
+/* Product banner */
+.product-banner {
+    // background: url(/images/pattern01.png) $purple;
+    background: url(/images/pattern03.png) $purple;
+    // background: url(/images/pattern07.png) $purple;
+    color: white;
+    padding: $padding_vertical_mobile $padding_horizontal;
+
+    .product-banner-title {
+        @include title-4;
+        @include heading-margins;
+        font-family: $font_ss;
+        margin-top: 0;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+@media #{$desktop} {
+    .product-banner {
+        text-align: center;
+        padding: $padding_vertical_desktop 0;
+
+        .product-banner-title {
+            @include title-3;
+        }
+    }
+}

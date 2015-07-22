@@ -1,0 +1,103 @@
+/** Using SASS for CSS preprocessing http://sass-lang.com/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+html { font-size: 1.125em; }
+
+body { line-height: 1.45; }
+
+p { margin-bottom: 1.3em; }
+
+.font_small { font-size: 0.833em; line-height: 1.2; }
+
+/* Global styles */
+body { padding-top: 62px; font-family: "Domine", "Georgia", serif; color: #444; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; }
+
+a { color: #027FE9; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+a:hover { color: #00CAF8; }
+
+.container { max-width: 100%; margin-left: auto; margin-right: auto; *zoom: 1; max-width: 960px; }
+.container:after { content: " "; display: block; clear: both; }
+head { display: block; position: fixed; : 10px; : 10px; z-index: 999; color: #333; background: rgba(255, 255, 255, 0.25); }
+head:before { content: "|||"; display: block; padding: 5px 10px; font-family: sans-serif; font-size: 16px; font-weight: bold; }
+head:hover { background: rgba(255, 255, 255, 0.5); color: red; }
+head:hover ~ .container, head:hover ~ body .container { position: relative; }
+head:hover ~ .container:before, head:hover ~ body .container:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(255, 51, 153, 0.2), rgba(255, 128, 191, 0.2) 80%, transparent 80%); background-size: 8.47458%; background-origin: content-box; background-clip: content-box; background-position: left top; }
+.container:after { content: ""; display: table; clear: both; }
+
+@media (min-width: 700px) { body { padding-top: 0; } }
+/* Header */
+.header { background: white; padding: 8px 0; position: fixed; top: 0; left: 0; width: 100%; height: 46px; box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
+
+.logo-section { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 8px; height: 46px; padding-left: 8px; }
+.logo-section a { max-width: 100%; max-height: 100%; }
+.logo-section .logo-image { max-width: 100%; max-height: 100%; }
+
+.nav-burger { position: absolute; top: 8px; right: 8px; font-size: 1.2em; background: #f8f8f8; padding: 12px 16px; line-height: 1; }
+.nav-burger:hover { cursor: pointer; }
+
+.nav-primary { position: absolute; top: 60px; left: 0; width: 100%; display: none; background: white; z-index: 100; box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
+.nav-primary a { color: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; display: block; padding: 5px 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #f8f8f8; }
+.nav-primary a:last-child { border: 0; }
+.nav-primary a.active { font-weight: 700; }
+.nav-primary a:active { background: #fbfbfb; }
+
+@media (min-width: 700px) { .header { position: static; }
+  .logo-section { width: 23.72881%; float: left; margin-right: 1.69492%; }
+  .nav-burger { display: none; }
+  .nav-primary { position: static; box-shadow: none; display: block; width: 74.57627%; float: left; margin-right: 1.69492%; float: right; margin-right: 0; text-align: right; padding-top: 0.5em; }
+  .nav-primary a { display: inline-block; border: 0; } }
+/* Footer */
+.footer { padding: 20px 0; text-align: center; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; font-size: 0.9em; }
+.footer p { margin: 0; }
+
+@media (min-width: 700px) { .footer { padding: 50px 0; } }
+/* Learn More */
+.learn-more { padding: 20px 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url(/images/pattern01.png) #f8f8f8; }
+.learn-more a { background: #5015BD; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; color: white; text-align: center; width: 100%; float: left; margin-left: 0; margin-right: 0; padding: 10px 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.learn-more a:hover { background: #027FE9; }
+
+@media (min-width: 700px) { .learn-more { padding: 50px 8px; }
+  .learn-more a { width: 66.10169%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; font-size: 1.44em; line-height: 1.2; padding: 20px 8px; } }
+/* Product banner */
+.product-banner { background: url(/images/pattern03.png) #5015BD; color: white; padding: 20px 8px; }
+.product-banner .product-banner-title { font-size: 1.2em; line-height: 1.2; margin: 1.414em 0 0.5em; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; margin-top: 0; }
+.product-banner p:last-child { margin-bottom: 0; }
+
+@media (min-width: 700px) { .product-banner { text-align: center; padding: 50px 0; }
+  .product-banner .product-banner-title { font-size: 1.44em; line-height: 1.2; } }
+/* Databricks component */
+.databricks { padding: 20px 8px; }
+.databricks .databricks-logo .databricks-logo-image { max-width: 70%; display: block; margin: 10px auto; }
+.databricks .databricks-text { text-align: center; }
+.databricks .databricks-text p { margin: 0; }
+
+@media (min-width: 700px) { .databricks .databricks-logo { width: 32.20339%; float: left; margin-right: 1.69492%; }
+  .databricks .databricks-logo .databricks-logo-image { max-width: 100%; }
+  .databricks .databricks-text { width: 57.62712%; float: left; margin-right: 1.69492%; margin-left: 8.47458%; float: right; margin-right: 0; text-align: left; padding: 1.5em 0; } }
+/* Getting Started section */
+.getting-started { background: url(/images/pattern01.png) #f8f8f8; padding: 20px 8px; }
+.getting-started .getting-started-text { text-align: center; }
+.getting-started .getting-started-text p { margin: 0; }
+.getting-started .getting-started-title { font-size: 1.44em; line-height: 1.2; margin: 1.414em 0 0.5em; font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; margin-top: 0; }
+.getting-started .getting-started-links { margin-top: 40px; }
+.getting-started .getting-started-links a { font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif; text-align: center; display: block; padding: 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: #5015BD; color: white; margin-bottom: 10px; }
+
+@media (min-width: 700px) { .getting-started { padding: 50px 8px; }
+  .getting-started .getting-started-title { font-size: 1.728em; line-height: 1.2; }
+  .getting-started .getting-started-links a { width: 32.20339%; float: left; margin-right: 1.69492%; }
+  .getting-started .getting-started-links a:last-child { float: right; margin-right: 0; } }

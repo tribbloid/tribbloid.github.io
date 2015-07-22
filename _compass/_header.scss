@@ -1,0 +1,104 @@
+/* Header */
+.header {
+    background: white;
+    padding: $padding_horizontal 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $header_height;
+    @include shadow;
+}
+
+.logo-section {
+    @include box-sizing(border-box);
+    margin-bottom: $padding_horizontal;
+    height: $header_height;
+    padding-left: $padding_horizontal;
+
+    a {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .logo-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.nav-burger {
+    position: absolute;
+    top: $padding_horizontal;
+    right: $padding_horizontal;
+    font-size: 1.2em;
+    background: $light_grey;
+    padding: $padding_horizontal*1.5 $padding_horizontal*2;
+    line-height: 1;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.nav-primary {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: white;
+    z-index: 100;
+    @include shadow;
+
+    a {
+        color: $purple;
+        font-family: $font_ss;
+        display: block;
+        padding: 5px $padding_horizontal;
+        @include box-sizing(border-box);
+        border-bottom: 1px solid $light_grey;
+
+        &:last-child {
+            border: 0;
+        }
+
+        &.active {
+            font-weight: 700;
+        }
+
+        &:active {
+            background: lighten($light_grey, 1%);
+        }
+    }
+
+}
+
+@media #{$desktop} {
+    .header {
+        position: static;
+    }
+
+    .logo-section {
+        @include span(3);
+    }
+
+    .nav-burger {
+        display: none;
+    }
+
+    .nav-primary {
+        position: static;
+        box-shadow: none;
+        display: block;
+        @include span(9);
+        @include omega;
+        text-align: right;
+        padding-top: 0.5em;
+
+        a {
+            display: inline-block;
+            border: 0;
+        }
+    }
+}

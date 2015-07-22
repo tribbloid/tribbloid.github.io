@@ -1,0 +1,22 @@
+<div class="getting-started">
+
+    <div class="container">
+        <div class="getting-started-text">
+            <h2 class="getting-started-title">Getting Started</h2>
+
+            <p>
+                Ready to get started?
+            </p>
+            <p>
+                Check out the documentation and tutorials!
+            </p>
+        </div>
+
+        <div class="getting-started-links">
+            {% for link in site.data.getting_started_links %}
+            <a class="getting-started-link" href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>

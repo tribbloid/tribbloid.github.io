@@ -12,15 +12,23 @@ Run the following command to install the Gem dependencies:
 
 ### CSS with Sass and Compass
 
-CSS is compiled and preprocessed with Compass. All working files are found in `_compass` and compile to `_site/css`.
+CSS is compiled and preprocessed with Jekyll's Sass preprocessor. All working files are found in `css` and `_sass`, and compile to `_site/css`.
 
 Prepend the filenames of include files (Sass partials) with `_` to avoid writing those files to the output directory.
 
-    ├── _compass
+The main CSS file:
+
+    ├── css
+    │   └── style.scss
+
+
+The CSS partials:
+
+    ├── _sass
     │   ├── _header.scss
     │   ├── _type_scale.scss
     │   ├── _variables.scss
-    │   └── style.scss
+
 
 ### Style
 

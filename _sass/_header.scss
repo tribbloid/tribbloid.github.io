@@ -52,17 +52,12 @@
     @include shadow;
 
     a {
-        color: $yellow;
-        // color: $purple;
+        color: $purple;
         font-family: $font_ss;
         display: block;
         padding: 5px $padding_horizontal;
         @include box-sizing(border-box);
         border-bottom: 1px solid $light_grey;
-
-        &:hover {
-            color: $yellow;
-        }
 
         &:last-child {
             border: 0;

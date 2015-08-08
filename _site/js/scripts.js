@@ -32,4 +32,26 @@
     // when disabling default iOS a:active highlight, this allows custom :active styles to show
     document.addEventListener('touchstart', function() {}, true);
 
+    // Demo iframes
+    $(".fancybox").fancybox({
+        // width: '70%',
+        // height: '70%',
+        width: '900px',
+        height: '550px',
+        // margin: [120,20,30,20],
+        openEffect:"elastic",
+        closeEffect:"fade",
+        overlayOpacity:"0.2",
+        helpers:{
+            title: {
+                type:"inside"
+            },
+            overlay:{
+                css: {
+                    "background-color":"rgba(0,0,0,0.6)"
+                    // "background-color":"rgba(80,21,186,0.6)"
+                }
+            }
+        }
+    });
 })(window.jQuery, window.Modernizr, window, document);

@@ -58,6 +58,12 @@
                     margin-right: 0;
                 }
             }
+
+            &:nth-child(2n+1) {
+                .demo-text {
+                    float: right;
+                }
+            }
         }
 
         .demo-text {
@@ -74,4 +80,10 @@
         }
 
     }
+}
+
+// Demo iframe fancybox overrides
+.fancybox-title {
+    font-weight: 700;
+    text-align: center;
 }

@@ -10,7 +10,7 @@ Run the following command to install the Gem dependencies:
     bundle install
 
 
-### CSS with Sass and Compass
+### CSS with Sass
 
 CSS is compiled and preprocessed with Jekyll's Sass preprocessor. All working files are found in `css` and `_sass`, and compile to `_site/css`.
 

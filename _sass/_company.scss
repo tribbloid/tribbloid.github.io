@@ -1,0 +1,30 @@
+.company-section {
+    padding: $padding_vertical_mobile $padding_horizontal;
+
+    .company-title {
+        @include title-3;
+        @include heading-margins;
+        margin-top: 0;
+        color: $purple;
+    }
+
+    h2 {
+        @include title-4;
+        @include heading-margins;
+        color: $purple;
+    }
+}
+
+@media #{$desktop} {
+    .company-section {
+        padding: $padding_vertical_desktop 0;
+
+        .company-title {
+            @include title-1;
+        }
+
+        h2 {
+            @include title-2;
+        }
+    }
+}

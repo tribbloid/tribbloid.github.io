@@ -1218,3 +1218,27 @@ a {
     .company-section h2 {
       font-size: 1.728em;
       line-height: 1.2; } }
+.contact-info {
+  padding: 20px 8px;
+  background: url(/images/pattern03.png) #5015BD;
+  color: white; }
+  .contact-info .contact-info-title {
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin: 1.414em 0 0.5em;
+    margin-top: 0; }
+  .contact-info span {
+    display: block; }
+  .contact-info a {
+    color: white;
+    text-decoration: underline; }
+  .contact-info i.fa {
+    font-size: 1.1em;
+    width: 26px; }
+
+@media (min-width: 700px) {
+  .contact-info {
+    padding: 50px 0; }
+    .contact-info .contact-info-title {
+      font-size: 1.728em;
+      line-height: 1.2; } }

@@ -1,0 +1,35 @@
+.contact-info {
+    padding: $padding_vertical_mobile $padding_horizontal;
+    background: url(/images/pattern03.png) $purple;
+    color: white;
+
+    .contact-info-title {
+        @include title-4;
+        @include heading-margins;
+        margin-top: 0;
+    }
+
+    span {
+        display: block;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    i.fa {
+        font-size: 1.1em;
+        width: 26px;
+    }
+}
+
+@media #{$desktop} {
+    .contact-info {
+        padding: $padding_vertical_desktop 0;
+
+        .contact-info-title {
+            @include title-2;
+        }
+    }
+}

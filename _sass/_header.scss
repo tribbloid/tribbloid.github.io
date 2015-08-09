@@ -3,6 +3,7 @@
     background: white;
     padding: $padding_horizontal 0;
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
@@ -44,11 +45,11 @@
 .nav-primary {
     background: white;
     position: absolute;
+    z-index: 100;
     top: 60px;
     left: 0;
     width: 100%;
     display: none;
-    z-index: 100;
     @include shadow;
 
     a {

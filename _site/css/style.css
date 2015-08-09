@@ -773,6 +773,7 @@ a {
   background: white;
   padding: 8px 0;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -807,11 +808,11 @@ a {
 .nav-primary {
   background: white;
   position: absolute;
+  z-index: 100;
   top: 60px;
   left: 0;
   width: 100%;
   display: none;
-  z-index: 100;
   box-shadow: 0 3px 3px rgba(68, 68, 68, 0.1); }
   .nav-primary a {
     color: #5015BD;

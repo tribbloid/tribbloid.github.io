@@ -1,0 +1,36 @@
+.download-section {
+    padding: $padding_vertical_mobile $padding_horizontal;
+
+    .download-title {
+        @include title-3;
+        @include heading-margins;
+        margin-top: 0;
+        color: $purple;
+    }
+
+    .download-buttons {
+        padding: $padding_vertical_mobile 0;
+    }
+}
+
+@media #{$desktop} {
+    .download-section {
+        padding: $padding_vertical_desktop 0;
+
+        .download-title {
+            @include title-1;
+        }
+    }
+
+    .download-buttons {
+        padding: $padding_vertical_desktop 0;
+
+        .button {
+            // 2-up
+            // @include col(6/12, $cycle: 2);
+
+            // 3-up
+            @include col(4/12, $cycle: 3);
+        }
+    }
+}

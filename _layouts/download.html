@@ -1,0 +1,19 @@
+{% include header.html %}
+
+<div class="download-section">
+    <div class="container">
+        <div class="download-text">
+            <h1 class="download-title">Download</h1>
+
+            {{ content }}
+        </div>
+
+        <div class="download-buttons">
+            {% for download in site.data.download %}
+            <a class="button" href="{{ download.link }}" target="_blank">{{ download.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

@@ -4,7 +4,9 @@
     display: block;
     color: white;
     text-align: center;
+    padding: $padding_horizontal;
     @include box-sizing(border-box);
+    margin-bottom: 10px;
 
     &:hover {
         color: white;

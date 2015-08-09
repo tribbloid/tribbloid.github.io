@@ -9,10 +9,6 @@
     .button {
         @include col(12/12);
         padding: 10px 0;
-
-        &:hover {
-            background: $blue;
-        }
     }
 }
 

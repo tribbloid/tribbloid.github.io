@@ -1,16 +1,71 @@
 /* Slider */
+$slider_height: 400px;
+
 .slider {
     .slide {
+        padding: $padding_vertical_mobile 0;
+        background: $light_grey;
+
         .slide-image {
             max-width: 100%;
+            max-height: 400px;
+            margin: 0 auto;
+            display: block;
         }
 
         .slide-text-section {
             text-align: center;
+            padding: $padding_vertical_mobile 0;
         }
 
         .slide-text {
             font-weight: 700;
         }
+
+        // special CSS classes specified in slider.yml
+        &.slide-eyes {
+            background: black;
+            color: white;
+        }
+
+        &.slide-one-engine {}
     }
+
+    @media #{$desktop} {
+        .slider {
+
+            .slide {
+                padding: $padding_vertical_desktop 0;
+            }
+        }
+    }
+}
+
+// Flexslider overrides
+.flexslider {
+    .slides {
+        img {
+            width: auto;
+        }
+    }
+}
+.flex-control-nav {
+    margin: 0;
+    bottom: 0px;
+}
+
+.flex-control-paging li a {
+    background: $purple;
+
+    &:hover {
+        background: lighten($purple, 15%);
+    }
+
+    &.flex-active {
+        background: $blue;
+    }
+}
+
+.flex-direction-nav {
+    display: none;
 }

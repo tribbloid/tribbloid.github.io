@@ -1,6 +1,18 @@
+# `css_class` correspond with css class in _slider.scss
+# please prefix with `slide-`
 - title: A thousand eyes for your machine intelligence
   image: collage.jpg
+  css_class: slide-eyes
 
 - title: One engine, all resources
   image: resource.png
+  css_class: slide-one-engine
+
+- title: A thousand eyes for your machine intelligence
+  image: collage.jpg
+  css_class: slide-eyes
+
+- title: One engine, all resources
+  image: resource.png
+  css_class: slide-one-engine
 

@@ -1169,6 +1169,7 @@ a {
     font-size: 1.44em;
     line-height: 1.2;
     margin: 1.414em 0 0.5em;
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
     margin-top: 0;
     color: #5015BD; }
   .download-section .download-buttons {
@@ -1197,17 +1198,17 @@ a {
         clear: both; } }
 .company-section {
   padding: 20px 8px; }
+  .company-section .company-title, .company-section h2 {
+    margin: 1.414em 0 0.5em;
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+    color: #5015BD; }
   .company-section .company-title {
     font-size: 1.44em;
     line-height: 1.2;
-    margin: 1.414em 0 0.5em;
-    margin-top: 0;
-    color: #5015BD; }
+    margin-top: 0; }
   .company-section h2 {
     font-size: 1.2em;
-    line-height: 1.2;
-    margin: 1.414em 0 0.5em;
-    color: #5015BD; }
+    line-height: 1.2; }
 
 @media (min-width: 700px) {
   .company-section {
@@ -1227,6 +1228,7 @@ a {
     font-size: 1.2em;
     line-height: 1.2;
     margin: 1.414em 0 0.5em;
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
     margin-top: 0; }
   .contact-info span {
     display: block; }

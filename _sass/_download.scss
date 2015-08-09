@@ -4,6 +4,7 @@
     .download-title {
         @include title-3;
         @include heading-margins;
+        font-family: $font_ss;
         margin-top: 0;
         color: $purple;
     }

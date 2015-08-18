@@ -1,14 +1,17 @@
 # `css_class` correspond with css class in _slider.scss
 # please prefix with `slide-`
 - title: A Thousand Eyes for your Machine Intelligence
-  image: slide1.png
+  image: slide10.png
   css_class: slide-image
 
 - title: Integrated and Scale with your Analytic Pipeline
-  image: slide2.png
+  image: slide20.png
   css_class: slide-image
 
-- title: Unified Architecture for All Data Acquisition
-  image: slide3.jpg
+- title: Can't be Shorter and Faster
+  image: slide25.png
   css_class: slide-image
 
+- title: Turn All Resources into Linked Data
+  image: slide30.jpg
+  css_class: slide-image

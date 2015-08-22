@@ -3,6 +3,10 @@
   url: /product
   actual_url: /product/index.html
 
+- name: Documentation
+  url: http://tribbloid.github.io/spookystuff/
+  actual_url: http://tribbloid.github.io/spookystuff/index.html
+
 - name: Download
   url: /download
   actual_url: /download/index.html

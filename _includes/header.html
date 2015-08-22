@@ -13,24 +13,24 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="logo-section">
-                <a href="/">
-                    <img class="logo-image" src="/images/logo_long.png" alt="Spooky Stuff logo">
-                </a>
-            </div>
+<div class="header">
+    <div class="container">
+        <div class="logo-section">
+            <a href="/">
+                <img class="logo-image" src="/images/logo_long.png" alt="Spooky Stuff logo">
+            </a>
+        </div>
 
-            <div class="nav-burger">
-                <span data-burger class="fa fa-navicon"></span>
-            </div>
+        <div class="nav-burger">
+            <span data-burger class="fa fa-navicon"></span>
+        </div>
 
-            <div data-menu class="nav-primary">
-                {% for link in site.data.navigation_primary_links %}
-                <a href="{{ link.url }}" {% if link.actual_url == page.url %}class="active"{% endif %}>
-                    {{ link.name }}
-                </a>
-                {% endfor %}
-            </div>
+        <div data-menu class="nav-primary">
+            {% for link in site.data.navigation_primary_links %}
+            <a href="{{ link.url }}" {% if link.actual_url == page.url %}class="active"{% endif %}>
+                {{ link.name }}
+            </a>
+            {% endfor %}
         </div>
     </div>
+</div>

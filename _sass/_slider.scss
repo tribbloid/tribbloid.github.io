@@ -2,9 +2,12 @@
 $slider_height: 400px;
 
 .slider {
+    border-bottom: 1px solid $light_grey;
+    border-top: 1px solid $light_grey;
+
     .slide {
-        padding: $padding_vertical_mobile 0;
-        background: $light_grey;
+        background: white;
+        position: relative;
 
         .slide-image {
             max-width: 100%;
@@ -15,7 +18,16 @@ $slider_height: 400px;
 
         .slide-text-section {
             text-align: center;
-            padding: $padding_vertical_mobile 0;
+            text-shadow: 0 0 2px white;
+            padding: 20px 0 40px;
+            font-size: 0.9em;
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+            @include slider-gradient;
         }
 
         .slide-text {
@@ -23,19 +35,29 @@ $slider_height: 400px;
         }
 
         // special CSS classes specified in slider.yml
-        &.slide-eyes {
-            background: black;
-            color: white;
-        }
+        // for customizing colours if needed
+        &.slide-eyes {}
 
-        &.slide-one-engine {}
+        &.slide-analytics-pipeline {}
+
+        &.slide-eyes {}
+
+        &.slide-shorter-faster {}
+
+        &.slide-linked-data {
+            background: rgba(#869FF0, 0.8);
+        }
     }
 
-    @media #{$desktop} {
-        .slider {
+}
 
-            .slide {
-                padding: $padding_vertical_desktop 0;
+@media #{$desktop} {
+    .slider {
+
+        .slide {
+            .slide-text-section {
+                padding: 40px 0 50px;
+                font-size: 1em;
             }
         }
     }

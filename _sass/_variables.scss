@@ -9,6 +9,9 @@ $dark_grey: #444;
 $green: #63B411;
 $yellow: #E1A209;
 
+$slider_white: rgba(white,0.6);
+$slider_white_position: 15%;
+
 // Fonts
 $font_ss: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
 $font_s: 'Domine', 'Georgia', serif;
@@ -26,4 +29,15 @@ $header_height_rendered: $header_height + $padding_horizontal*2;
 // Mixins
 @mixin shadow {
     box-shadow: 0 3px 3px rgba($dark_grey, 0.1);
+}
+
+@mixin slider-gradient {
+    // http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;0+0,1+100
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, $slider_white $slider_white_position); // FF3.6+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-st0p($slider_white_position,$slider_white)); // Chrome,Safari4+
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,$slider_white $slider_white_position); // Chrome10+,Safari5.1+
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,$slider_white $slider_white_position); // Opera 11.10+
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,$slider_white $slider_white_position); // IE10+
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,$slider_white $slider_white_position); // W3C
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); // IE6-9
 }

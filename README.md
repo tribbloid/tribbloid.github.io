@@ -42,6 +42,20 @@ To serve the site at [http://localhost:4000](http://localhost:4000), run the fol
     bundle exec jekyll serve
 
 
+### Managing the slider
+
+The slider is a dynamic element that can be reused with any content provided that it follows the same format. An example of the format required is in `_data/demos.yml`.
+
+The slider needs the `fancybox_items` variable assigned to it before including it.
+
+The following is an implementation of Fancybox on the Product page (demos.html), with the items passed to the Fancybox partial:
+
+```
+{% assign fancybox_items=site.data.demos %}
+{% include fancybox.html %}
+```
+
+
 ### Maintaining the Jekyll website
 
 Jekyll is updated frequently. To ensure that the site locally looks as it does on Github pages, periodically you may need to update the required dependencies and run the site. Update using the following command:

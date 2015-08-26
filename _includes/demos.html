@@ -7,21 +7,8 @@
             </p>
         </div>
 
-        {% for demo in site.data.demos %}
-        <div class="demo">
-            <a class="fancybox" data-fancybox-type="iframe" href="{{ demo.iframe }}" title="{{ demo.title }}">
-                <img class="demo-image" src="/images/demos/{{ demo.image }}" />
-            </a>
-
-            <div class="demo-text">
-                <h3 class="demo-title">{{ demo.title }}</h3>
-                <p>
-                    {{ demo.description }}
-                </p>
-            </div>
-
-        </div>
-        {% endfor %}
+        {% assign fancybox_items=site.data.demos %}
+        {% include fancybox.html %}
 
     </div>
 </div>

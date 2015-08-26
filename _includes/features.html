@@ -1,20 +1,6 @@
-<div class="feature-section">
+<div class="demo-section">
     <div class="container">
-
-        {% for feature in site.data.features %}
-
-        <div class="feature">
-            <img class="feature-image" src="{{ feature.image }}" />
-
-            <div class="feature-text">
-                <h3 class="feature-title">{{ feature.title }}</h3>
-                <p>
-                    {{ feature.description }}
-                </p>
-            </div>
-
-        </div>
-        {% endfor %}
-
+        {% assign fancybox_items=site.data.demos_home %}
+        {% include fancybox.html %}
     </div>
 </div>

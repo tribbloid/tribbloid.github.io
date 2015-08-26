@@ -43,3 +43,20 @@ p {
     font-size: 0.833em;
     line-height: 1.2;
 }
+
+.client-text-section {
+    h2, h3, h4 { @include heading-margins; }
+
+    h2 { @include title-2; }
+
+    h3 { @include title-3; }
+
+    h3 { @include title-3; }
+
+    h4 { @include title-4; }
+
+    ul {
+        margin: 1.3em 0;
+        padding-left: 1em;
+    }
+}

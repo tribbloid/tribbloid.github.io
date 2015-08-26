@@ -13,13 +13,3 @@
   description: 'SpookyStuff is a query engine for Open Data'
   image: demo3.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-161723_917276179?asIframe"
-
-- title: SpookyStuff is the eyes of AI
-  description: 'SpookyStuff is the eyes of Artificial Intelligence'
-  image: demo4.png
-  iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-163014_2048566544?asIframe"
-
-- title: SpookyStuff is the eyes of AI
-  description: 'SpookyStuff is the eyes of Artificial Intelligence'
-  image: demo5.png
-  iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150722-203635_1672590013?asIframe"

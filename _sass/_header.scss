@@ -16,6 +16,7 @@
     margin-bottom: $padding_horizontal;
     height: $header_height;
     padding-left: $padding_horizontal;
+    padding-top: 10px;
 
     a {
         max-width: 100%;
@@ -23,7 +24,7 @@
     }
 
     .logo-image {
-        max-width: 100%;
+        max-width: 70%;
         max-height: 100%;
     }
 }
@@ -82,6 +83,10 @@
 
     .logo-section {
         @include span(3/12);
+
+        .logo-image {
+            max-width: 100%;
+        }
     }
 
     .nav-burger {

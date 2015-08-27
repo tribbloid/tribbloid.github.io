@@ -17,7 +17,8 @@
     function initContentSlider() {
         setTimeout(function () {
             $('[data-slider]').flexslider({
-                animation: 'slide'
+                animation: 'slide',
+                customDirectionNav: $('.slider-controls a')
             });
         }, 500);
     }

@@ -1,25 +1,38 @@
 # Put links with a # in quotes ""
 - title: SpookyStuff is a Deep Web Scraper
-  description: 'SpookyStuff is a scalable and lightweight query engine for web scraping'
+  description: |
+    <ul>
+    <li>Lightning-fast prototyping, execution and deployment on Apache Spark</li>
+    <li>50% shorter code than any peer framework</li>
+    <li>Monitor deep web through hundreds of web browsers and proxies</li>
+    </ul>
   image: demo1.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-161547_152071502?asIframe"
 
-- title: SpookyStuff is a Resource Integrator
-  description: 'SpookyStuff multiple integrates resources'
+- title: SpookyStuff is an API Integrator
+  description: |
+    <ul>
+    <li>Quickly combine heterogeneous web services to build your data product</li>
+    <li>Minimized running time and cost through advanced partitioner, execution optimizer and web caching</li>
+    <li>Resilient to service downtime through multiple levels of retry and failsafe mechanism</li>
+    </ul>
   image: demo2.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150801-024400_992386944?asIframe"
 
-- title: SpookyStuff is a Query Engine for Open Data
-  description: 'SpookyStuff is a query engine for Open Data'
+- title: SpookyStuff is a Linked Data Query Engine
+  description: |
+    <ul>
+    <li>Able to read from various unstructured contents, including HTML/XML, JSON, CSV, PDF, MS Office & RTF</li>
+    <li>Turn any online resource into open data</li>
+    </ul>
   image: demo3.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-161723_917276179?asIframe"
 
 - title: SpookyStuff is the eyes of AI
-  description: 'SpookyStuff is the eyes of Artificial Intelligence'
+  description: |
+    <ul>
+    <li>Easy integration with scalable machine learning API, including MLlib, H2O, and deeplearning4j</li>
+    <li>Promote the proactive learning pattern: your cluster can actively seek knowledge online to train itself</li>
+    </ul>
   image: demo4.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-163014_2048566544?asIframe"
-
-- title: SpookyStuff is the eyes of AI
-  description: 'SpookyStuff is the eyes of Artificial Intelligence'
-  image: demo5.png
-  iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150722-203635_1672590013?asIframe"

@@ -1,12 +1,17 @@
 (function ($, Modernizr, window, document){
-    // CSS and JS desktop breakpoint should match
-    var isDesktop = Modernizr.mq('(min-width: 700px)');
+    var menu;
 
     $(function () {
         // DOM ready
+        var burger = $('[data-burger]');
+        menu = $('[data-menu]');
+
         mobileMenu();
         initContentSlider();
         demoIframeSetup();
+
+        burger.on('touchstart click', handleMenuClick);
+        window.addEventListener('resize', mobileMenu);
     });
 
 
@@ -29,20 +34,19 @@
      * @return {null}
      */
     function mobileMenu() {
-        if (isDesktop) {
-            return;
-        }
+        // CSS and JS desktop breakpoint should match
+        var isDesktop = Modernizr.mq('(min-width: 700px)');
 
-        var menu = $('[data-menu]');
-        var burger = $('[data-burger]');
+        menu[ isDesktop ? 'slideDown' : 'slideUp' ](300);
+        menu.css('display', isDesktop ? 'block' : 'none');
+    }
 
-        burger.on('touchstart click', function (evt) {
-            var isOpen = this.classList.contains('is-active');
-            this.classList[ isOpen ? 'remove' : 'add' ]('is-active');
-            menu[ isOpen ? 'slideUp' : 'slideDown' ](300);
+    function handleMenuClick (evt) {
+        var isOpen = this.classList.contains('is-active');
+        this.classList[ isOpen ? 'remove' : 'add' ]('is-active');
+        menu[ isOpen ? 'slideUp' : 'slideDown' ](300);
 
-            evt.preventDefault();
-        });
+        evt.preventDefault();
     }
 
     /**
@@ -71,6 +75,5 @@
 
     // when disabling default iOS a:active highlight, this allows custom :active styles to show
     document.addEventListener('touchstart', function() {}, true);
-
 
 })(window.jQuery, window.Modernizr, window, document);

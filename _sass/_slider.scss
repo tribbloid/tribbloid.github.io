@@ -4,12 +4,10 @@ $slider_height: 700px;
 .slider {
     border-bottom: 1px solid $light_grey;
     border-top: 1px solid $light_grey;
-        height: $slider_height;
 
     .slide {
         background: white;
         position: relative;
-        height: $slider_height;
 
         .slide-image {
             max-width: 100%;
@@ -56,6 +54,8 @@ $slider_height: 700px;
     .slider {
 
         .slide {
+            max-height: $slider_height;
+
             .slide-text-section {
                 padding: 40px 0 50px;
                 font-size: 1em;

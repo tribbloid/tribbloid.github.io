@@ -1,38 +1,38 @@
 # Put links with a # in quotes ""
-- title: SpookyStuff is a Deep Web Scraper
+- title: A Deep Web Scraper
   description: |
     <ul>
-    <li>Lightning-fast prototyping, execution and deployment on Apache Spark</li>
     <li>50% shorter code than any peer framework</li>
-    <li>Monitor deep web through hundreds of web browsers and proxies</li>
+    <li>Traversing the deep web at will with browser automation and proxy support</li>
     </ul>
   image: demo1.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-161547_152071502?asIframe"
 
-- title: SpookyStuff is an API Integrator
+- title: An API Integrator
   description: |
     <ul>
-    <li>Quickly combine heterogeneous web services to build your data product</li>
-    <li>Minimized running time and cost through advanced partitioner, execution optimizer and web caching</li>
-    <li>Resilient to service downtime through multiple levels of retry and failsafe mechanism</li>
+    <li>Quickly combine heterogeneous web services to build your pipelines and products</li>
+    <li>Minimized time & cost through advanced query optimizer and web caching</li>
+    <li>Resilient to service downtime through multiple levels of retry and failsafe handling</li>
     </ul>
   image: demo2.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150801-024400_992386944?asIframe"
 
-- title: SpookyStuff is a Linked Data Query Engine
+- title: A Linked Data Query Engine
   description: |
     <ul>
-    <li>Able to read from various unstructured contents, including HTML/XML, JSON, CSV, PDF, MS Office & RTF</li>
+    <li>Lightning-fast running, testing and deployment on Apache Spark</li>
+    <li>Able to parse & extract from various unstructured contents, including HTML/XML, JSON, CSV, PDF, MS Office fromats & RTF</li>
     <li>Turn any online resource into open data</li>
     </ul>
   image: demo3.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-161723_917276179?asIframe"
 
-- title: SpookyStuff is the eyes of AI
+- title: The eyes of AI
   description: |
     <ul>
     <li>Easy integration with scalable machine learning API, including MLlib, H2O, and deeplearning4j</li>
-    <li>Promote the proactive learning pattern: your cluster can actively seek knowledge online to train itself</li>
+    <li>Friendly to proactive learning pattern: your AI cluster now actively seek data online to train itself!</li>
     </ul>
   image: demo4.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-163014_2048566544?asIframe"

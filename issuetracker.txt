@@ -1,0 +1,9 @@
+js/vendor.js need pre-compile files and grunt setting for compilation
+
+general js compilation advice: grunt? ember? etc.
+
+404 page
+
+what's the point of reset.scss & type_scale.scss
+
+merge _feature.scss with _demo.scss?

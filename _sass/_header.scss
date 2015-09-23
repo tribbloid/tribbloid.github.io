@@ -1,109 +1,129 @@
 /* Header */
-.header {
-    background: white;
-    padding: $padding_horizontal 0;
-    position: fixed;
-    z-index: 300;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: $header_height;
-    @include shadow;
-}
+.navbar {
+    background-size: auto;
+    background-color: $transparent_yellow;
 
-.logo-section {
-    @include box-sizing(border-box);
-    margin-bottom: $padding_horizontal;
-    height: $header_height;
-    padding-left: $padding_horizontal;
-    padding-top: 10px;
+    //padding: $padding_horizontal 0;
+    //position: fixed;
+    //z-index: 300;
+    //top: 0;
+    //left: 0;
+    //width: 100%;
+    //height: $header_height;
+    //@include shadow;
 
-    a {
-        max-width: 100%;
-        max-height: 100%;
+    .nav > li > a {
+        color: #000;
+        font-weight: bold;
     }
 
-    .logo-image {
-        max-width: 70%;
-        max-height: 100%;
+    .nav > li > a:hover {
+        color: #ffff00;
+        /*text-decoration: none;*/
+        background-color: #000;
+        text-shadow: none;
     }
-}
 
-.nav-burger {
-    position: absolute;
-    top: $padding_horizontal;
-    right: $padding_horizontal;
-    font-size: 1.2em;
-    background: $light_grey;
-    padding: $padding_horizontal*1.5 $padding_horizontal*2;
-    line-height: 1;
-
-    &:hover {
-        cursor: pointer;
+    .navbar-brand {
+        padding: 0 $padding_horizontal;
     }
 }
 
-.nav-primary {
-    background: white;
-    position: absolute;
-    z-index: 100;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    display: none;
-    @include shadow;
+//.navbar .nav > li > a:focus,
 
-    a {
-        color: $purple;
-        font-family: $font_ss;
-        display: block;
-        padding: 5px $padding_horizontal;
-        @include box-sizing(border-box);
-        border-bottom: 1px solid $light_grey;
+//.navbar-brand {
+//    @include box-sizing(border-box);
+//    margin-bottom: $padding_horizontal;
+//    height: $header_height;
+//    padding-left: $padding_horizontal;
+//    padding-top: 10px;
+//
+//    a {
+//        max-width: 100%;
+//        max-height: 100%;
+//    }
+//
+//    .logo-image {
+//        max-width: 70%;
+//        max-height: 100%;
+//    }
+//}
 
-        &:last-child {
-            border: 0;
-        }
+//.nav-burger {
+//    position: absolute;
+//    top: $padding_horizontal;
+//    right: $padding_horizontal;
+//    font-size: 1.2em;
+//    background: $light_grey;
+//    padding: $padding_horizontal*1.5 $padding_horizontal*2;
+//    line-height: 1;
+//
+//    &:hover {
+//        cursor: pointer;
+//    }
+//}
 
-        &.active {
-            font-weight: 700;
-        }
+//.nav-primary {
+//    background: white;
+//    position: absolute;
+//    z-index: 100;
+//    top: 60px;
+//    left: 0;
+//    width: 100%;
+//    display: none;
+//    @include shadow;
+//
+//    a {
+//        color: $purple;
+//        font-family: $font_ss;
+//        display: block;
+//        padding: 5px $padding_horizontal;
+//        @include box-sizing(border-box);
+//        border-bottom: 1px solid $light_grey;
+//
+//        &:last-child {
+//            border: 0;
+//        }
+//
+//        &.active {
+//            font-weight: 700;
+//        }
+//
+//        &:active {
+//            background: lighten($light_grey, 1%);
+//        }
+//    }
+//
+//}
 
-        &:active {
-            background: lighten($light_grey, 1%);
-        }
-    }
-
-}
-
-@media #{$desktop} {
-    .header {
-        position: static;
-    }
-
-    .logo-section {
-        @include span(3/12);
-
-        .logo-image {
-            max-width: 100%;
-        }
-    }
-
-    .nav-burger {
-        display: none;
-    }
-
-    .nav-primary {
-        position: static;
-        box-shadow: none;
-        display: block;
-        @include span(9/12);
-        text-align: right;
-        padding-top: 0.5em;
-
-        a {
-            display: inline-block;
-            border: 0;
-        }
-    }
-}
+//@media #{$desktop} {
+//    .header {
+//        position: static;
+//    }
+//
+//    .logo-section {
+//        @include span(3/12);
+//
+//        .logo-image {
+//            max-width: 100%;
+//        }
+//    }
+//
+//    .nav-burger {
+//        display: none;
+//    }
+//
+//    .nav-primary {
+//        position: static;
+//        box-shadow: none;
+//        display: block;
+//        @include span(9/12);
+//        text-align: right;
+//        padding-top: 0.5em;
+//
+//        a {
+//            display: inline-block;
+//            border: 0;
+//        }
+//    }
+//}

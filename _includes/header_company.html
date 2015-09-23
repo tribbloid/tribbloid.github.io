@@ -1,0 +1,89 @@
+{% include header.html%}
+
+<nav class="navbar navbar-fixed-top" style="background-image: url('images/pattern05.png')" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!--<div class="navbar-brand">-->
+            <p class="navbar-brand">com.</p>
+            <a class="navbar-brand" href="company.html">
+                <img class="logo-image" src="images/logo_tribbloids.png" alt="tribbloids">
+            </a>
+            <p class="navbar-brand">.</p>
+            <a class="navbar-brand" href="index.html">
+                <img class="logo-image" src="images/logo_spooky.png" alt="SpookyStuff">
+            </a>
+            <!--</div>-->
+
+            <!--<div class="logo-section">-->
+
+            <!--<span>-->
+            <!--&lt;!&ndash;<ul class="">&ndash;&gt;-->
+            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+            <!--<a class="logo-image" href="company.html">-->
+            <!--<img class="logo-image" src="images/logo_tribbloids.png" alt="SpookyStuff logo">-->
+            <!--</a>-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+            <!--<a class="logo-image" href="index.html">-->
+            <!--<img class="logo-image" src="images/logo_spooky.png" alt="SpookyStuff logo">-->
+            <!--</a>-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+            <!--</span>-->
+            <!--</div>-->
+        </div>
+
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                {% for link in site.data.navigation_primary_links %}
+                <li {% if link.actual_url == page.url %} class="active"{% endif %}>
+                    <a href="{{ link.url }}">
+                        {{ link.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!--<div class="header">-->
+<!--<div class="container">-->
+<!--<div class="logo-section">-->
+<!--<h5>com.</h5>-->
+<!--<a href="company.html">-->
+<!--<img class="logo-image" src="images/logo_tribbloids.png" alt="SpookyStuff logo">-->
+<!--</a>-->
+<!--<h5>.</h5>-->
+<!--<a href="index.html">-->
+<!--<img class="logo-image" src="images/logo_spooky.png" alt="SpookyStuff logo">-->
+<!--</a>-->
+<!--</div>-->
+
+<!--<div class="nav-burger">-->
+<!--<span data-burger class="fa fa-navicon"></span>-->
+<!--</div>-->
+
+<!--<div data-menu class="nav-primary">-->
+<!--{% for link in site.data.navigation_primary_links %}-->
+<!--<a href="{{ link.url }}" {% if link.actual_url == page.url %} class="active"{% endif %}>-->
+<!--{{ link.name }}-->
+<!--</a>-->
+<!--{% endfor %}-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->

@@ -1,0 +1,19 @@
+# `css_class` correspond with css class in _slider.scss
+# please prefix with `slide-`
+# do not use `slide-image` or `slide-text`--these classes are already in use
+- title: A thousand eyes for your machine intelligence
+  image: images/carousel/slide10.png
+  css_class: fill
+
+- title: vsite.STABLE_VERSION Released
+  image: images/pattern05.png
+  css_class: pattern
+  content: |
+        <h3>Wayback engine</h3>
+        <h3>Pipeline API</h3>
+        <h3>OAuth v2.0 support</h3>
+        <h3>JSON parser</h3>
+        <h3>More Launch Parameters</h3>
+        <a href="#" class="btn btn-default">Relase Note</a>
+
+#- title: Certified on Spark

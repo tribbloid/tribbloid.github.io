@@ -2,25 +2,22 @@
 title: Download
 layout: download
 meta_description: A scalable query engine for web scraping, data mashup, and acceptance QA. Certified for Apache Spark.
-meta_keywords: download, Tribbloid, Spooky Stuff, Apache Spark, web scraper, data mining
-summary: Download Spooky Stuff, a scalable query engine for web scraping, data mashup, and acceptance QA
+meta_keywords: download, Tribbloid, SpookyStuff, Apache Spark, web scraper, data mining
+summary: Download SpookyStuff, a scalable query engine for web scraping, data mashup, and acceptance QA
 ---
 
-# Download Latest:
+# Download Latest
 
-<div class="table" markdown="1">
-
+{:.table}
 |  | Stable ({{site.STABLE_VERSION}}) | Nightly ({{site.NIGHTLY_VERSION}}) |
 | ------------- | ------------------------ | -------------- |
-| Library | [Download .jar](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff-assembly-{{site.STABLE_VERSION}}.jar) | [Download .jar](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff-assembly-{{site.NIGHTLY_VERSION}}.jar) |
-| Bundled with Spark {{site.SPARK_VERSION0}} | [Download .zip](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff-assembly-{{site.STABLE_VERSION}}-bin-spark{{site.SPARK_VERSION0}}.zip) | [Download .zip](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff-assembly-{{site.NIGHTLY_VERSION}}-bin-spark{{site.SPARK_VERSION0}}.zip) |
-| Bundled with Spark {{site.SPARK_VERSION1}} | [Download .zip](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff-assembly-{{site.STABLE_VERSION}}-bin-spark{{site.SPARK_VERSION1}}.zip) | [Download .zip](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff-assembly-{{site.NIGHTLY_VERSION}}-bin-spark{{site.SPARK_VERSION1}}.zip) |
+| Library | [Download .jar](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff/spark-{{site.SPARK_VERSION.first}}-scala-2.10/spookystuff-assembly-{{site.STABLE_VERSION}}.jar) | [Download .jar](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff/spark-{{site.SPARK_VERSION.first}}-scala-2.10/spookystuff-assembly-{{site.NIGHTLY_VERSION}}.jar) |
+{% for version in site.SPARK_VERSION %}| Bundled with Spark {{version}} | [Download .zip](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff/spark-{{version}}-scala-2.10/spookystuff-assembly-{{site.STABLE_VERSION}}-bin-spark{{version}}.zip) | [Download .zip](https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff/spark-{{version}}-scala-2.10/spookystuff-assembly-{{site.NIGHTLY_VERSION}}-bin-spark{{version}}.zip)
+{% endfor %}
 
-</div>
+[Download Previous Versions](http://tribbloid.github.io/spookystuff/deploying.html#previous-versions)
 
-# [Download Previous Versions](http://tribbloid.github.io/spookystuff/deploying.html#previous-versions)
-
-# Dependency Tabs (is it hard?)
+# Download as a Dependency
 
 <div class="codetabs">
 

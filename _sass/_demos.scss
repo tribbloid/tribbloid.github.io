@@ -4,6 +4,12 @@
     // background: url(/images/pattern08.png) $light_grey;
     padding: $padding_vertical_mobile $padding_horizontal;
 
+    .demo {
+        padding: $padding_vertical_mobile/2 0;
+        margin-bottom: $padding_horizontal;
+        @include cf;
+    }
+
     .demos-text {
         text-align: center;
     }
@@ -16,19 +22,6 @@
         margin-top: 0;
     }
 
-    .demo {
-        padding: $padding_vertical_mobile/2 0;
-        margin-bottom: $padding_horizontal;
-        @include cf;
-    }
-
-    .demo-text {}
-
-    .demo-title {
-        font-family: $font_ss;
-        @include heading-margins;
-    }
-
     .demo-image {
         background: $light_grey;
         width: 100%;
@@ -39,10 +32,6 @@
 @media #{$desktop} {
     .demo-section {
         padding: $padding_vertical_desktop $padding_horizontal;
-
-        .demos-title {
-            @include title-2;
-        }
 
         .demo {
             padding: $padding_vertical_desktop 0;

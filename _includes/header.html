@@ -3,36 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }} &ndash; Spooky Stuff</title>
+    <title>{{ page.title }} &ndash; SpookyStuff</title>
     <link rel="icon" type="image/png" href="images/icon.png" />
     <meta name="description" content="{{ page.meta_description }}">
     <meta name="keywords" content="{{ page.meta_keywords }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
-    <link href="http://fonts.googleapis.com/css?family=Domine|Montserrat" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Domine|Montserrat" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-responsive.min.css">-->
+    <link rel="stylesheet" href="css/pygments-default.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- <a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-black-right.png"> </a> -->
+<!--<a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-black-right.png"> </a>-->
 <body>
-<div class="header">
-    <div class="container">
-        <div class="logo-section">
-            <a href="/">
-                <img class="logo-image" src="/images/logo_long.png" alt="Spooky Stuff logo">
-            </a>
-        </div>
-
-
-        <div class="nav-burger">
-            <span data-burger class="fa fa-navicon"></span>
-        </div>
-
-        <div data-menu class="nav-primary">
-            {% for link in site.data.navigation_primary_links %}
-            <a href="{{ link.url }}" {% if link.actual_url == page.url %}class="active"{% endif %}>
-                {{ link.name }}
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-</div>

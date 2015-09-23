@@ -2,8 +2,9 @@
 - title: A Deep Web Scraper
   description: |
     <ul>
-    <li>50% shorter code than any peer framework</li>
-    <li>Traversing the deep web at will with browser automation and proxy support</li>
+    <li>Write 50% shorter code than any alternative</li>
+    <li>Browser automation support</li>
+    <li>traversing the deep web at will with browser automation and proxy support</li>
     </ul>
   image: demo1.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-161547_152071502?asIframe"
@@ -13,7 +14,7 @@
     <ul>
     <li>Quickly combine heterogeneous web services to build your pipelines and products</li>
     <li>Minimized time & cost through advanced query optimizer and web caching</li>
-    <li>Resilient to service downtime through multiple levels of retry and failsafe handling</li>
+    <li>Resilient to service downtime through distributed retry and failsafe resolving</li>
     </ul>
   image: demo2.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150801-024400_992386944?asIframe"

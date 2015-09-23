@@ -1,4 +1,4 @@
-# Spooky Stuff landing page
+# SpookyStuff landing page
 
 ## Development
 
@@ -20,7 +20,6 @@ The main CSS file:
 
     ├── css
     │   └── style.scss
-
 
 The CSS partials:
 
@@ -83,14 +82,14 @@ A page, e.g. `./product/index.md`, generally looks like this:
 ---
 title: Product
 layout: product
-summary: Spooky Stuff is a scalable query engine for web scraping, data mashup, and acceptance QA
+summary: SpookyStuff is a scalable query engine for web scraping, data mashup, and acceptance QA
 ---
 
 SpookyStuff scales up data collection by distributing web clients to many machines.
 
-Spooky Stuff is a scalable query engine for web scraping, data mashup, and acceptance QA, powered by Apache Spark.
+SpookyStuff is a scalable query engine for web scraping, data mashup, and acceptance QA, powered by Apache Spark.
 
-A more detailed blurb about Spooky Stuff, perhaps a couple of paragraphs.
+A more detailed blurb about SpookyStuff, perhaps a couple of paragraphs.
 ```
 
 It's Markdown and contains Yaml front-matter like `title`, `layout`, etc. (variables).
@@ -132,7 +131,7 @@ The above example uses `_layouts/default.html` as its layout.
 Partials are defined in: `_includes` and are included on pages and layouts as so:
 
 ```liquid
-{% include header.html %}
+{% include header.html%}
 ```
 
 

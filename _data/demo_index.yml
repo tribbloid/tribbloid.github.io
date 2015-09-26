@@ -1,12 +1,13 @@
 # Put links with a # in quotes ""
 
-- title: The Fastest Data Collection Engine in History.
-  description: |
-    > describe relation in 5 lines <br>
-    > preview result <br>
-    > deploy to Spark cluster <br>
-    > scale up <br>
-    > real time deep web ==> data product
+- description: |
+    <ul>
+    <li> describe relations in 5 lines </li>
+    <li> preview on your machine </li>
+    <li> deploy to any Spark cluster </li>
+    <li> scale up </li>
+    <li> deep web => data product, in realtime </li>
+    </ul>
 #    Such record-breaking speed is achieved by a combination of query optimizer, distributed web caching and extemely lightweight implementation.
 #      <ul>
 #        <li>Also with the shortest script: can be as short as 5 lines</li>
@@ -16,30 +17,37 @@
   image: demo1.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-161547_152071502?asIframe"
 
-- title: Pipeline View
+- title: |
+    <img src="images/pipeline.png"/>
+    <h1>Pipeline View</h1>
   description: |
-    <h3>It's a deploy-and-forget-thing </h3>
-    > mimic Spark ML pipeline stages <br>
-    > takes 5 mintues to assimilate a web service, 30 seconds if someone has already done so <br>
-    > become <b>permanently effective</b> once shared online: will be tested daily by our servers
-    and adapt to your web service provider <br>
-    > now get back to data science and forget this
+    <h3>It's a Deploy-&-Forget thing </h3>
+    <ul>
+    <li> mimic Spark ML pipeline stages </li>
+    <li> takes 5 mintues to assimilate a web service, 30 seconds if someone has already done so </li>
+    <li> become <b>permanently effective</b> once shared online: will be tested daily by our servers
+    and adapt to your data provider </li>
+    <li> now get back to data science and forget it ever exists</li>
+    </ul>
 #    With simplicity prioritized, the pipeline API hides the engineering details of distributed crawling & data extraction so you
 #    can concentrate on the beauty of data science.
-
   image: demo2.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150801-024400_992386944?asIframe"
 
-- title: Proactive Data Mining
+- title: |
+    <img src="images/ml_sgd.png"/>
+    <h1>Proactive Machine Learning</h1>
   description: |
-    <h3>In Soviet Russia your AI trains you</h3>
-    predictive AI
-    |  found something new?
-    |  Google it
-    |  Find keywords AI can relate to
-    |  Still can't predict credibly?
-    |  post to crowdsourcing platform
-    V  get your answer
-    proactive AI
+    <h3>In Soviet Russia, your AI trains you!</h3>
+    <ul>
+    <li> predictive AI </li>
+    <li> |  name doesn't ring a bell? </li>
+    <li> |  Google it! </li>
+    <li> |  Keyword/Entity extraction </li>
+    <li> |  Still can't predict credibly? </li>
+    <li> |  post to crowdsourcing platform! </li>
+    <li> V  get answer & retrain </li>
+    <li> proactive AI </li>
+    </ul>
   image: demo3.png
   iframe: "http://ec2-52-8-176-82.us-west-1.compute.amazonaws.com:8888/#/notebook/2AV6QDKME/paragraph/20150709-161723_917276179?asIframe"

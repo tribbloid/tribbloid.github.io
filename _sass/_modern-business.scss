@@ -15,11 +15,17 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-.btn-default {
+.btn-float {
+    //@include shadow;
     border-radius: 0;
     border-width: 2px;
     border-color: black;
-    background-color: rgba(white, 0.2);
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.btn-float:hover {
+    opacity: 1;
 }
 
 .img-portfolio {

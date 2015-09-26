@@ -1,8 +1,39 @@
+.feature-title {
+    font-family: $font_ss;
+    @include heading-margins;
+
+    img {
+        //@include col(3/12);
+        width: 100px;
+        padding-left: 50px;
+        padding-right: 20px;
+        @include box-sizing(content-box);
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    h1 {
+        display: inline-block;
+        vertical-align: middle;
+        @include text-shadow;
+    }
+}
+
+.feature-intro {
+    background-color: $light_yellow;
+
+    //.feature-title{
+    //    //color: b;
+    //}
+}
+
+
 .feature-section {
     // background: url(/images/pattern01.png) $blue;
     // background: url(/images/pattern05.png) $light_grey;
     // background: url(/images/pattern08.png) $light_grey;
     padding: $padding_vertical_mobile $padding_horizontal;
+    background-color: $light_grey;
 
     .feature {
         padding: $padding_vertical_mobile/2 0;
@@ -11,11 +42,6 @@
     }
 
     .feature-text {
-    }
-
-    .feature-title {
-        font-family: $font_ss;
-        @include heading-margins;
     }
 
     .feature-image {

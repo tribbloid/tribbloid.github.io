@@ -1,7 +1,8 @@
 /* Header */
 .navbar {
-    background-size: auto;
+    //background-size: auto;
     background-color: $transparent_yellow;
+    background-position: 0 50px ;
 
     //padding: $padding_horizontal 0;
     //position: fixed;
@@ -13,23 +14,32 @@
     //@include shadow;
 
     .nav > li > a {
-        color: #000;
+        color: black;
         font-weight: bold;
     }
 
     .nav > li > a:hover {
-        color: #ffff00;
+        color: yellow;
         /*text-decoration: none;*/
-        background-color: #000;
+        background-color: black;
+        text-shadow: none;
+    }
+
+    .nav > li.active > a {
+        color: yellow;
+        /*text-decoration: none;*/
+        background-color: rgba(black, 0.7);
         text-shadow: none;
     }
 
     .navbar-brand {
         padding: 0 $padding_horizontal;
     }
-}
 
-//.navbar .nav > li > a:focus,
+    .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+}
 
 //.navbar-brand {
 //    @include box-sizing(border-box);

@@ -10,7 +10,7 @@ $light_yellow: #ffff70;
 $transparent_yellow: rgba(yellow,0.56);
 
 $green: #63B411;
-$yellow: #E1A209;
+$orange: #E1A209;
 
 $slider_white: rgba(white,0.6);
 $slider_white_position: 15%;
@@ -30,8 +30,12 @@ $header_height: 50px;
 $header_height_rendered: $header_height;
 
 // Mixins
-@mixin shadow {
-    box-shadow: 0 3px 3px rgba($dark_grey, 0.1);
+@mixin shadow($value: $dark_grey) {
+    box-shadow: 0 3px 3px rgba($value, 0.1);
+}
+
+@mixin text-shadow($value: $dark_grey) {
+    text-shadow: 0 3px 3px rgba($value, 0.1);
 }
 
 @mixin slider-gradient {

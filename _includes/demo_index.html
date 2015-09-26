@@ -1,12 +1,25 @@
+<div class="feature-intro">
+
+    <div class="container">
+        <div class="feature-title">
+            <img src="images/parallel.png"/>
+            <h1>Data Acquisition at Scale</h1>
+        </div>
+    </div>
+</div>
+
 <div class="feature-section">
+
     <div class="container">
         {% assign fancybox_items=site.data.demo_index %}
-
         {% for item in fancybox_items %}
 
-        <div class="feture-box">
-            <h3 class="feature-title">{{ item.title }}</h3>
+        {% if item.title %}
+        <div class="feature-title">
+            {{ item.title }}
         </div>
+        {% endif %}
+
         <div class="feature">
             <div class="feature-text">
                 <p>
@@ -14,7 +27,7 @@
                 </p>
             </div>
 
-            <a class="fancybox" data-fancybox-type="iframe" href="{{ item.iframe }}" title="{{ item.title }}">
+            <a class="fancybox" data-fancybox-type="iframe" href="{{ item.iframe }}">
                 <img class="feature-image" src="images/demos/{{ item.image }}" />
             </a>
         </div>

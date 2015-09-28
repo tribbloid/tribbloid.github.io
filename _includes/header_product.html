@@ -46,6 +46,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a class="btn navbar-btn" href="https://s3-us-west-1.amazonaws.com/spooky-bin/spookystuff/spark-{{site.SPARK_VERSION.first}}-scala-2.10/spookystuff-assembly-{{site.STABLE_VERSION}}.jar">
+                        Download {{ site.STABLE_VERSION }}
+                    </a>
+                </li>
+                <li>
+                    <a class="btn navbar-btn" href="https://github.com/tribbloid/spookystuff">
+                        Community
+                    </a>
+                </li>
+            </ul>
+
             <ul class="nav navbar-nav navbar-right">
                 {% for link in site.data.navigation_primary_links %}
                 <li {% if link.actual_url == page.url %} class="active"{% endif %}>

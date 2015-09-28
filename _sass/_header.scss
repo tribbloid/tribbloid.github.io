@@ -32,6 +32,18 @@
         text-shadow: none;
     }
 
+    .navbar-btn {
+        //@include shadow;
+        border-width: 2px;
+        border-radius: 0;
+        border-color: black;
+        //background-color: transparent;
+        padding: 5px;
+        display: block;
+        vertical-align: bottom;
+        //font-weight: bold;
+    }
+
     .navbar-brand {
         padding: 0 $padding_horizontal;
     }
